@@ -1,0 +1,103 @@
+﻿@model Covisky.Models.Clases.Reserva
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Reserva Tu Vuelo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+    <link href="jAlert/jquery.alerts.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .header {
+            color: #f44336;
+            font-size: 72px;
+            font-family: Russo One;
+            padding-top: 55px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        #menu li {
+            display: inline;
+            text-align: center;
+            margin: 30px;
+        }
+
+        #menuop {
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .slogan {
+            color: black;
+            font-size: 26px;
+            font-family: Russo One;
+            float:right;
+            position: relative;
+            top: -50px;
+            padding-right:50px;
+        }
+        hr{
+            border-top: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-image:url(../../Imagen/mejores-aerolineas-sudamerica.jpg)">
+        <!--BARRA DE MENU-->
+        <div id="menu" style="background-color: #f44336; border:solid; float:right; width:670px; height:30px">
+            <ul class="sidebar-menu">
+                <li id="menuop" class="active">
+                    <a href="#" style="color: #bdbdbd; position:relative; top:-11px;">
+                        <i class="fa fa-home"></i>
+                        Inicio
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="#" style="color: black; position:relative; top: -11px;">
+                        <i class="fa fa-tag"></i>
+                        Oferta de Viajes
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="#" style="color:black; position:relative; top:-11px;">
+                        <i class="fa fa-briefcase"></i>
+                        Mis Viajes
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="#" style="color:black; position:relative; top:-11px;">
+                        <i class="fa fa-location-arrow"></i>
+                        Millas
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--LOGO Y TITULO-->
+        <div>
+            <img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
+            <a href="#"><header class="header">COVISKY</header></a>
+            <span class="slogan">FLY SAFE, FLY NOW,  FLY WITH COVISKY</span>
+        </div>
+
+    </div>
+</body>
+</html>
