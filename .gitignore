@@ -2,5 +2,10 @@ Covysky/.vs/Covisky/v16/.suo
 Covisky/.vs/Covisky/v16/.suo
 
 *.dll
-
 Covisky/bin/
+
+Covisky/.vs/Covisky/config/applicationhost.config
+
+Covisky/obj/Debug/Covisky.csprojAssemblyReference.cache
+
+*.cache
