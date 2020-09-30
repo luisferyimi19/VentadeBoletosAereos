@@ -1,0 +1,164 @@
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\Covisky.dll.config
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\Covisky.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\Covisky.pdb
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\csc.exe
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\csc.exe.config
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\csc.rsp
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\csi.exe
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\csi.exe.config
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\csi.rsp
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.AppContext.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Console.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.IO.Compression.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Net.Http.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.ValueTuple.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\vbc.exe
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\vbc.exe.config
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\vbc.rsp
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\VBCSCompiler.exe
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\EntityFramework.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\EntityFramework.SqlServer.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Helpers.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Mvc.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Razor.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Webpages.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Webpages.Razor.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\EntityFramework.xml
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\EntityFramework.SqlServer.xml
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Razor.xml
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Webpages.xml
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Webpages.Razor.xml
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Helpers.xml
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\System.Web.Mvc.xml
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\es\System.Web.Razor.resources.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\obj\Debug\Covisky.csprojAssemblyReference.cache
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\obj\Debug\Covisky.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\obj\Debug\Covisky.csproj.CopyComplete
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\obj\Debug\Covisky.dll
+C:\Users\Carlos\Desktop\UMG\SEMESTRE 8\ANALISIS II\PROYECTO FINAL\Covisky\obj\Debug\Covisky.pdb
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\Covisky.dll.config
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\Covisky.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\Covisky.pdb
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\csc.exe
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\EntityFramework.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\EntityFramework.SqlServer.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Helpers.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Mvc.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Razor.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Webpages.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Webpages.Razor.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\EntityFramework.xml
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\EntityFramework.SqlServer.xml
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Razor.xml
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Webpages.xml
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Webpages.Razor.xml
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Helpers.xml
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\System.Web.Mvc.xml
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\es\System.Web.Razor.resources.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\obj\Debug\Covisky.csprojAssemblyReference.cache
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\obj\Debug\Covisky.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\obj\Debug\Covisky.csproj.CopyComplete
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\obj\Debug\Covisky.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\obj\Debug\Covisky.pdb
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\csc.exe.config
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\csc.rsp
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\csi.exe
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\csi.exe.config
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\csi.rsp
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.AppContext.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Console.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.IO.Compression.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Net.Http.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.ValueTuple.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\vbc.exe
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\vbc.exe.config
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\vbc.rsp
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\VBCSCompiler.exe
+C:\Users\Carlos\Downloads\Prueba\Ventadeboletosaereos\Covisky\bin\roslyn\VBCSCompiler.exe.config

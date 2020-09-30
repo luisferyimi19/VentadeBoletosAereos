@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ffdb15578b82436bac351bf9ff047e5a" Name="Diagram1">
+        <EntityTypeShape EntityType="CoviskyModel.Aeropuerto" Width="1.5" PointX="2.875" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Asiento" Width="1.5" PointX="0.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Boleto" Width="1.5" PointX="5.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Clase" Width="1.5" PointX="2.875" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Detalle_Factura" Width="1.5" PointX="9.875" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Emisor_Tarjeta" Width="1.5" PointX="9.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Factura" Width="1.5" PointX="7.625" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Pais" Width="1.5" PointX="0.625" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Pasajero" Width="1.5" PointX="6.125" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Servicio_Extra" Width="1.5" PointX="1.875" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Tarjeta" Width="1.5" PointX="7.625" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoviskyModel.Tipo_Pasajero" Width="1.5" PointX="3.875" PointY="8.125" IsExpanded="true" />
+        <AssociationConnector Association="CoviskyModel.FK_aero_pai_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_bol_aero_ID_Destino" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_bol_aero_ID_Origen" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_asi_cla_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_bol_cla_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_bol_pas_Pasaporte" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_bol_ser_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_bol_tar_NoTarjeta" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_fac_bol_No_Boleto" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_des_fac_No" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_tar_et_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CoviskyModel.FK_pas_tip_ID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

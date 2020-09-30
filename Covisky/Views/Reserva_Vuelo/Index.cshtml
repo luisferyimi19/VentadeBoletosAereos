@@ -1,0 +1,303 @@
+﻿@model Covisky.Models.Clases.Reserva
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Reserva Tu Vuelo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+    <link href="jAlert/jquery.alerts.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .header {
+            color: #f44336;
+            font-size: 72px;
+            font-family: Russo One;
+            padding-top: 55px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        #menu ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        #menu li {
+            display: inline;
+            text-align: center;
+            margin: 30px;
+        }
+
+        #menuop {
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .slogan {
+            color: black;
+            font-size: 26px;
+            font-family: Russo One;
+            float:right;
+            position: relative;
+            top: -50px;
+            padding-right:50px;
+        }
+        .tabContainer{
+            padding: 20px;
+            width: 97%;
+            height: 350px;
+        }
+        .tabContainer .buttonContainer{
+            height: 15%;
+        }
+        .tabContainer .buttonContainer button {
+            width: 25%;
+            height: 100%;
+            float: left;
+            border-radius: 10px;
+            outline: none;
+            cursor: pointer;
+            padding: 10px;
+            font-family: Source Sans Pro;
+            color: black;
+            font-size: 22px;
+            font-weight: bold;
+            background-color: #f44336;
+        }
+        .tabContainer .buttonContainer button:hover {
+            background-color: #bdbdbd;
+        }
+        .tabContainer .tabPanel{
+            height: 100%;
+            background-color: gray;
+            color: black;
+            box-sizing: border-box;
+            font-family: 'Source Sans Pro';
+            font-weight: bold;
+            font-size: 18px;
+            display: none;
+            border: 2px solid;
+        }
+        #menuvuelo ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        #menuvuelo li {
+            display: inline;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #menuopvuelo {
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .info{
+            margin: 130px;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        .info2 {
+            margin: 10px;
+            font-weight: normal;
+            padding-left: 130px;
+            font-size: 20px;
+        }
+        .info3 {
+            font-weight: normal;
+            padding-left: 210px;
+            font-size: 20px;
+        }
+        .info4 {
+            margin-right: 30px;
+            font-weight: normal;
+            position: relative;
+            left: 90px;
+        }
+        .info5 {
+            margin-right: 120px;
+            font-weight: normal;
+            position: relative;
+            left: 180px;
+        }
+        .clase{
+            list-style-type: none;
+            position: relative;
+            right: 180px;
+            top: -50px;
+        }
+        .clase2 {
+            list-style-type: none;
+            position: relative;
+            right: 90px;
+            top: -125px;
+        }
+        .number{
+            width: 30px;
+            position: relative;
+            left:10px;
+        }
+        .number1 {
+            width: 30px;
+            position: relative;
+            left: 25px;
+        }
+        .number2 {
+            width: 30px;
+            position: relative;
+            left: 23px;
+        }
+        .boton {
+            font-family: 'Source Sans Pro';
+            font-size: 16px;
+            font-weight:bold;
+            width: 135px;
+            height: 50px;
+            background-color: #f44336;
+            position: relative;
+            top: 80px;
+            left: 1300px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-image:url(../../Imagen/mejores-aerolineas-sudamerica.jpg)">
+        <!--BARRA DE MENU-->
+        <div id="menu" style="background-color: #f44336; border:solid; float:right; width:670px; height:30px">
+            <ul>
+                <li id="menuop">
+                    <a href="#" style="color: #bdbdbd; position:relative; top:-11px;">
+                        <i class="fa fa-home"></i>
+                        Inicio
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="#" style="position:relative; top: -11px;">
+                        <i class="fa fa-tag"></i>
+                        Oferta de Viajes
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="#" style="position:relative; top:-11px;">
+                        <i class="fa fa-briefcase"></i>
+                        Mis Viajes
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="#" style="position:relative; top:-11px;">
+                        <i class="fa fa-location-arrow"></i>
+                        Millas
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--LOGO Y TITULO-->
+        <div>
+            <img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
+            <a href="#"><header class="header">COVISKY</header></a>
+            <span class="slogan">FLY SAFE, FLY NOW,  FLY WITH COVISKY</span>
+        </div>
+
+        <br />
+
+        <!--TAB BAR MENU-->
+        <div class="tabContainer">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'rgba(0, 0, 0, 0)')">Reserva Tu Vuelo</button>
+                <button onclick="showPanel(1,'rgba(0, 0, 0, 0)')">Mis Viajes</button>
+                <button onclick="showPanel(2,'rgba(0, 0, 0, 0)')">Check-In</button>
+                <button onclick="showPanel(3,'rgba(0, 0, 0, 0)')">Estado de Vuelo</button>
+            </div><br />
+            <div class="tabPanel">
+                <div id="menuvuelo">
+                    <ul>
+                        <li id="menuopvuelo">
+                            <a href="#" style="text-decoration: underline;">
+                                Ida y Vuela
+                            </a>
+                        </li>
+                        <li id="menuopvuelo" style="font-weight:normal">
+                            <a href="#">
+                                Solo Ida
+                            </a>
+                        </li>
+                        <li id="menuopvuelo" style="font-weight:normal">
+                            <a href="#">
+                                Multidestino
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br />
+                <div>
+                    <!--RESERVA TU VUELO / IDA Y VUELTA-->
+                    <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
+                    <label class="info">En Que Fecha Deseas Viajar     <i class="fa fa-calendar"></i></label>
+                    <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
+
+                    <br /><br />
+
+                    <label class="info2">Desde</label>
+                    <label class="info2">Hasta</label>
+                    <label class="info3">Sales</label>
+                    <label class="info3">Regresas</label>
+
+                    <br /><br />
+
+                    <input type="text" id="Origen" name="Origen" placeholder="Origen" class="info4"/>
+                    <input type="text" id="Destino" name="Destino" placeholder="Destion" class="info4"/>
+                    <input type="date" id="Sales" name="Sales" class="info5"/>
+                    <input type="date" id="Sales" name="Sales" class="info5"/>
+                    <ul style="float: right">
+                        <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number"/></li>
+                        <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1"/></li>
+                        <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2"/></li>
+                        <ul style="float: right">
+                            <li class="clase2">
+                                <input type="radio" id="Economica" name="Economica" value="Economica"/>
+                                <label>Económica</label>
+                            </li>
+                            <br />
+                            <li class="clase2">
+                                <input type="radio" id="Ejecutivo" name="Ejecutivo" value="Ejecutivo" />
+                                <label>Ejecutivo</label>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <input type="button" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton"/>
+                </div>
+            </div>
+
+            <!--Vista de Mis Viajes-->
+            <div class="tabPanel">Contenido Mis Viajes
+                
+            </div>
+
+            <!--Vista de Check-In-->
+            <div class="tabPanel">Contenido Check-In</div>
+
+            <!--Vista de Estado de Vuelo-->
+            <div class="tabPanel">Contenido Estado De Vuelo</div>
+        </div>
+
+    </div>
+
+<script src="~/Scripts/tabmenu.js"></script>
+</body>
+</html>

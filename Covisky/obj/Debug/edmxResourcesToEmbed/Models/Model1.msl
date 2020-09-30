@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CoviskyModelStoreContainer" CdmEntityContainer="CoviskyEntities2">
+    <EntitySetMapping Name="Aeropuerto">
+      <EntityTypeMapping TypeName="CoviskyModel.Aeropuerto">
+        <MappingFragment StoreEntitySet="Aeropuerto">
+          <ScalarProperty Name="aero_ID" ColumnName="aero_ID" />
+          <ScalarProperty Name="aero_pai_ID" ColumnName="aero_pai_ID" />
+          <ScalarProperty Name="aero_Nombre" ColumnName="aero_Nombre" />
+          <ScalarProperty Name="aero_Ciudad" ColumnName="aero_Ciudad" />
+          <ScalarProperty Name="aero_Departamento" ColumnName="aero_Departamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asiento">
+      <EntityTypeMapping TypeName="CoviskyModel.Asiento">
+        <MappingFragment StoreEntitySet="Asiento">
+          <ScalarProperty Name="asi_No_Asiento" ColumnName="asi_No_Asiento" />
+          <ScalarProperty Name="asi_Nombre" ColumnName="asi_Nombre" />
+          <ScalarProperty Name="asi_Ubicacion" ColumnName="asi_Ubicacion" />
+          <ScalarProperty Name="asi_cla_ID" ColumnName="asi_cla_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Boleto">
+      <EntityTypeMapping TypeName="CoviskyModel.Boleto">
+        <MappingFragment StoreEntitySet="Boleto">
+          <ScalarProperty Name="bol_ID_Reserva" ColumnName="bol_ID_Reserva" />
+          <ScalarProperty Name="bol_No_Boleto" ColumnName="bol_No_Boleto" />
+          <ScalarProperty Name="bol_aero_ID_Origen" ColumnName="bol_aero_ID_Origen" />
+          <ScalarProperty Name="bol_aero_ID_Destino" ColumnName="bol_aero_ID_Destino" />
+          <ScalarProperty Name="bol_Fecha_Salida" ColumnName="bol_Fecha_Salida" />
+          <ScalarProperty Name="bol_Fecha_Regreso" ColumnName="bol_Fecha_Regreso" />
+          <ScalarProperty Name="bol_cla_ID" ColumnName="bol_cla_ID" />
+          <ScalarProperty Name="bol_pas_Pasaporte" ColumnName="bol_pas_Pasaporte" />
+          <ScalarProperty Name="bol_cantidad_Pajaseros" ColumnName="bol_cantidad_Pajaseros" />
+          <ScalarProperty Name="bol_Hora_Salida" ColumnName="bol_Hora_Salida" />
+          <ScalarProperty Name="bol_Hora_Llegada" ColumnName="bol_Hora_Llegada" />
+          <ScalarProperty Name="bol_Aeroline" ColumnName="bol_Aeroline" />
+          <ScalarProperty Name="bol_Costo" ColumnName="bol_Costo" />
+          <ScalarProperty Name="bol_tar_NoTarjeta" ColumnName="bol_tar_NoTarjeta" />
+          <ScalarProperty Name="bol_ser_ID" ColumnName="bol_ser_ID" />
+          <ScalarProperty Name="bol_Descuento_Millas" ColumnName="bol_Descuento_Millas" />
+          <ScalarProperty Name="bol_Escala" ColumnName="bol_Escala" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clase">
+      <EntityTypeMapping TypeName="CoviskyModel.Clase">
+        <MappingFragment StoreEntitySet="Clase">
+          <ScalarProperty Name="cla_ID" ColumnName="cla_ID" />
+          <ScalarProperty Name="cla_Nombre" ColumnName="cla_Nombre" />
+          <ScalarProperty Name="cla_Descripcion" ColumnName="cla_Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detalle_Factura">
+      <EntityTypeMapping TypeName="CoviskyModel.Detalle_Factura">
+        <MappingFragment StoreEntitySet="Detalle_Factura">
+          <ScalarProperty Name="des_fac_ID" ColumnName="des_fac_ID" />
+          <ScalarProperty Name="des_fac_No" ColumnName="des_fac_No" />
+          <ScalarProperty Name="des_fac_Detalle" ColumnName="des_fac_Detalle" />
+          <ScalarProperty Name="des_fac_subTotal" ColumnName="des_fac_subTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emisor_Tarjeta">
+      <EntityTypeMapping TypeName="CoviskyModel.Emisor_Tarjeta">
+        <MappingFragment StoreEntitySet="Emisor_Tarjeta">
+          <ScalarProperty Name="et_ID" ColumnName="et_ID" />
+          <ScalarProperty Name="et_Nombre" ColumnName="et_Nombre" />
+          <ScalarProperty Name="et_Pais" ColumnName="et_Pais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura">
+      <EntityTypeMapping TypeName="CoviskyModel.Factura">
+        <MappingFragment StoreEntitySet="Factura">
+          <ScalarProperty Name="fac_No" ColumnName="fac_No" />
+          <ScalarProperty Name="fac_bol_No_Boleto" ColumnName="fac_bol_No_Boleto" />
+          <ScalarProperty Name="fac_Pais" ColumnName="fac_Pais" />
+          <ScalarProperty Name="fac_CodigoPostal" ColumnName="fac_CodigoPostal" />
+          <ScalarProperty Name="fac_Total" ColumnName="fac_Total" />
+          <ScalarProperty Name="fac_Fecha" ColumnName="fac_Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pais">
+      <EntityTypeMapping TypeName="CoviskyModel.Pais">
+        <MappingFragment StoreEntitySet="Pais">
+          <ScalarProperty Name="pai_ID" ColumnName="pai_ID" />
+          <ScalarProperty Name="pai_Nombre" ColumnName="pai_Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pasajero">
+      <EntityTypeMapping TypeName="CoviskyModel.Pasajero">
+        <MappingFragment StoreEntitySet="Pasajero">
+          <ScalarProperty Name="pas_ID" ColumnName="pas_ID" />
+          <ScalarProperty Name="pas_Pasaporte" ColumnName="pas_Pasaporte" />
+          <ScalarProperty Name="pas_Nombre" ColumnName="pas_Nombre" />
+          <ScalarProperty Name="pas_Apellido" ColumnName="pas_Apellido" />
+          <ScalarProperty Name="pas_Fecha_Nac" ColumnName="pas_Fecha_Nac" />
+          <ScalarProperty Name="pas_correo" ColumnName="pas_correo" />
+          <ScalarProperty Name="pas_telefono" ColumnName="pas_telefono" />
+          <ScalarProperty Name="pas_Prefijo" ColumnName="pas_Prefijo" />
+          <ScalarProperty Name="pas_Direccion" ColumnName="pas_Direccion" />
+          <ScalarProperty Name="pas_tip_ID" ColumnName="pas_tip_ID" />
+          <ScalarProperty Name="pas_No_Viajero_Fre" ColumnName="pas_No_Viajero_Fre" />
+          <ScalarProperty Name="pas_Nacionalidad" ColumnName="pas_Nacionalidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Servicio_Extra">
+      <EntityTypeMapping TypeName="CoviskyModel.Servicio_Extra">
+        <MappingFragment StoreEntitySet="Servicio_Extra">
+          <ScalarProperty Name="ser_ID" ColumnName="ser_ID" />
+          <ScalarProperty Name="ser_Nombre" ColumnName="ser_Nombre" />
+          <ScalarProperty Name="ser_Descripcion" ColumnName="ser_Descripcion" />
+          <ScalarProperty Name="ser_Costo" ColumnName="ser_Costo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tarjeta">
+      <EntityTypeMapping TypeName="CoviskyModel.Tarjeta">
+        <MappingFragment StoreEntitySet="Tarjeta">
+          <ScalarProperty Name="tar_NoTarjeta" ColumnName="tar_NoTarjeta" />
+          <ScalarProperty Name="tar_FechaExp" ColumnName="tar_FechaExp" />
+          <ScalarProperty Name="tar_CodSeguridad" ColumnName="tar_CodSeguridad" />
+          <ScalarProperty Name="tar_millas" ColumnName="tar_millas" />
+          <ScalarProperty Name="tar_et_ID" ColumnName="tar_et_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Pasajero">
+      <EntityTypeMapping TypeName="CoviskyModel.Tipo_Pasajero">
+        <MappingFragment StoreEntitySet="Tipo_Pasajero">
+          <ScalarProperty Name="tip_ID" ColumnName="tip_ID" />
+          <ScalarProperty Name="tip_Nombre" ColumnName="tip_Nombre" />
+          <ScalarProperty Name="tip_Descripcion" ColumnName="tip_Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
