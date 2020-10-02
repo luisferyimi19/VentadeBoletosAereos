@@ -14,5 +14,10 @@ namespace Covisky.Controllers
         {
             return View();
         }
+         
+        public ActionResult Checkin()
+        {
+            return View();
+        }
     }
 }
