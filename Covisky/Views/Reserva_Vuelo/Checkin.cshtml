@@ -1,0 +1,285 @@
+﻿@model Covisky.Models.Clases.Reserva
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <title>Reserva Tu Vuelo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+    <link href="jAlert/jquery.alerts.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .header {
+            color: #f44336;
+            font-size: 72px;
+            font-family: Russo One;
+            padding-top: 55px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+            a:hover {
+                text-decoration: none;
+                color: #bdbdbd;
+            }
+
+        #menu ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        #menu li {
+            display: inline;
+            text-align: center;
+            margin: 30px;
+        }
+
+        #menuop {
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .slogan {
+            color: black;
+            font-size: 26px;
+            font-family: Russo One;
+            float: right;
+            position: relative;
+            top: -50px;
+            padding-right: 50px;
+        }
+
+        .tabContainer {
+            padding: 20px;
+            width: 100%;
+            height: 350px;
+        }
+
+            .tabContainer .buttonContainer {
+                height: 15%;
+            }
+
+                .tabContainer .buttonContainer button {
+                    width: 25%;
+                    height: 100%;
+                    float: left;
+                    border-radius: 10px;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    font-family: Source Sans Pro;
+                    color: black;
+                    font-size: 22px;
+                    font-weight: bold;
+                    background-color: #f44336;
+                }
+
+                    .tabContainer .buttonContainer button:hover {
+                        background-color: #bdbdbd;
+                    }
+
+            .tabContainer .tabPanel {
+                height: 100%;
+                background-color: gray;
+                color: black;
+                box-sizing: border-box;
+                font-family: 'Source Sans Pro';
+                font-weight: bold;
+                font-size: 18px;
+                display: none;
+                border: 2px solid;
+            }
+
+        #menuvuelo ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        #menuvuelo li {
+            display: inline;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #menuopvuelo {
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .info {
+            margin: 130px;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        .info2 {
+            margin: 10px;
+            font-weight: normal;
+            padding-left: 130px;
+            font-size: 20px;
+        }
+
+        .info3 {
+            font-weight: normal;
+            padding-left: 210px;
+            font-size: 20px;
+        }
+
+        .info4 {
+            margin-right: 30px;
+            font-weight: normal;
+            position: relative;
+            left: 90px;
+        }
+
+        .info5 {
+            margin-right: 120px;
+            font-weight: normal;
+            position: relative;
+            left: 180px;
+        }
+
+        .clase {
+            list-style-type: none;
+            position: relative;
+            right: 180px;
+            top: -50px;
+        }
+
+        .clase2 {
+            list-style-type: none;
+            position: relative;
+            right: 90px;
+            top: -125px;
+        }
+
+        .number {
+            width: 30px;
+            position: relative;
+            left: 10px;
+        }
+
+        .number1 {
+            width: 30px;
+            position: relative;
+            left: 25px;
+        }
+
+        .number2 {
+            width: 30px;
+            position: relative;
+            left: 23px;
+        }
+
+        .boton {
+            font-family: 'Source Sans Pro';
+            font-size: 16px;
+            font-weight: bold;
+            width: 135px;
+            height: 50px;
+            background-color: #f44336;
+            position: relative;
+            top: 80px;
+            left: 1300px;
+        }
+
+        body {
+            margin: 0px !important;
+            height: 5000px;
+        }
+
+        label > input[type="radio"] {
+            display: none;
+        }
+
+            label > input[type="radio"] + *::before {
+                content: "";
+                display: inline-block;
+                vertical-align: bottom;
+                width: 1rem;
+                height: 1rem;
+                margin-right: 0.3rem;
+                border-radius: 50%;
+                border-style: solid;
+                border-width: 0.1rem;
+                border-color: gray;
+            }
+
+            label > input[type="radio"]:checked + * {
+                text-decoration: underline;
+            }
+
+                label > input[type="radio"]:checked + *::before {
+                    background: radial-gradient(#333 0%, #333 40%, transparent 50%, transparent);
+                    border-color: #333;
+                }
+
+            label > input[type="radio"] + * {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+            }
+    </style>
+</head>
+<body>
+    <div style="background-image: url(../../Imagen/mejores-aerolineas-sudamerica.jpg); background-repeat: no-repeat; background-size: 100% 100%; height: 13%">
+        <!--BARRA DE MENU-->
+        <div id="menu" style="background-color: #f44336; border: solid; float: right; width: 670px; height: 30px; margin-top: 15px; margin-right: 15px;">
+            <ul style="margin-top: 11px; width: max-content;">
+                <li id="menuop">
+                    <a href="#" style="color: #bdbdbd; position:relative; top:-11px;">
+                        <i class="fa fa-home"></i>
+                        Inicio
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="#" style="position:relative; top: -11px;">
+                        <i class="fa fa-tag"></i>
+                        Oferta de Viajes
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="#" style="position:relative; top:-11px;">
+                        <i class="fa fa-briefcase"></i>
+                        Mis Viajes
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="#" style="position:relative; top:-11px;">
+                        <i class="fa fa-location-arrow"></i>
+                        Millas
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--LOGO Y TITULO-->
+        <div>
+            <img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
+            <a href="#" style="color:#ff000000"><header class="header">COVISKY</header></a>
+            <span class="slogan">FLY SAFE, FLY NOW,  FLY WITH COVISKY</span>
+        </div>
+
+    </div>
+
+    <script src="~/Scripts/tabmenu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
