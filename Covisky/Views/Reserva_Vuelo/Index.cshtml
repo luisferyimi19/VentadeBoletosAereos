@@ -123,38 +123,51 @@
         }
 
         .info {
-            margin: 130px;
             font-weight: normal;
             font-size: 20px;
+            margin-left: 10%;
         }
 
         .info2 {
-            margin: 10px;
+            margin: 0px;
             font-weight: normal;
-            padding-left: 130px;
+            padding-left: 133px;
             font-size: 20px;
         }
 
         .info3 {
             font-weight: normal;
-            padding-left: 210px;
+            padding-left: 140px;
             font-size: 20px;
         }
 
         .info4 {
-            margin-right: 30px;
+            margin-right: 35px;
             font-weight: normal;
             position: relative;
             left: 90px;
+            width: 12%;
         }
 
         .info5 {
-            margin-right: 120px;
+            margin-right: 48px;
             font-weight: normal;
             position: relative;
-            left: 180px;
+            left: 94px;
+            width: 13%;
         }
-
+        .info6 {
+            font-weight: normal;
+            padding-left: 18%;
+            font-size: 20px;
+        }
+        .info7 {
+            margin-right: 48px;
+            font-weight: normal;
+            position: relative;
+            left: 13%;
+            width: 22%;
+        }
         .clase {
             list-style-type: none;
             position: relative;
@@ -170,38 +183,40 @@
         }
 
         .number {
-            width: 30px;
+            width: 50px;
             position: relative;
             left: 10px;
         }
 
         .number1 {
-            width: 30px;
+            width: 50px;
             position: relative;
             left: 25px;
         }
 
         .number2 {
-            width: 30px;
+            width: 50px;
             position: relative;
             left: 23px;
         }
 
         .boton {
             font-family: 'Source Sans Pro';
+            color: white;
             font-size: 16px;
-            font-weight: bold;
             width: 135px;
             height: 50px;
             background-color: #f44336;
-            position: relative;
-            top: 80px;
-            left: 1300px;
+            position: absolute;
+            right: 28px;
+            margin-top: 46px;
+            border: none;
+            border-radius: 6px;
         }
 
         body {
             margin: 0px !important;
-            height: 5000px;
+            height: 1000px;
         }
 
         label > input[type="radio"] {
@@ -219,29 +234,99 @@
             border-style: solid;
             border-width: 0.1rem;
             border-color: gray;
+            margin-bottom: 5px;
         }
 
         label > input[type="radio"]:checked + * {
             text-decoration: underline;
         }
 
-            label > input[type="radio"]:checked + *::before {
-                background: radial-gradient(#333 0%, #333 40%, transparent 50%, transparent);
-                border-color: #333;
-            }
+        label > input[type="radio"]:checked + *::before {
+            background: radial-gradient(#333 0%, #333 40%, transparent 50%, transparent);
+            border-color: #333;
+        }
 
         label > input[type="radio"] + * {
             display: inline-block;
             padding: 0.5rem 1rem;
         }
- 
+        .titulo_info {
+            padding-left: 90px;
+            padding-top: 30px;
+            font-family: 'Source Sans Pro';
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contenido_info {
+            font-family: 'Source Sans Pro';
+            font-size: 16px;
+            max-width: 70%;
+            height: 97px;
+            padding-left: 38px;
+        }
+
+        .imagen {
+            background-image: url(../../Imagen/pasaporte.jpg);
+            background-position: 98%;
+            background-size: 289px 193px;
+            background-repeat: no-repeat;
+            height: 215px;
+        }
+
+        .imagen1 {
+            background-image: url(../../Imagen/turismo.jpg);
+            background-position: 98%;
+            background-size: 289px 193px;
+            background-repeat: no-repeat;
+            height: 215px;
+        }
+
+        .contacto {
+            background-image: url(../../Imagen/continente1.jpg);
+            background-position: right;
+            background-size: 507px 296px;
+            background-repeat: no-repeat;
+            height: 300px;
+            text-align: center;
+        }
+
+        .contacto1 {
+            font-family: 'Source Sans Pro';
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contacto2 {
+            font-family: 'Russo One';
+            font-size: 49px;
+            color: #f44336;
+        }
+
+        .contacto3 {
+            font-family: 'Source Sans Pro';
+            font-size: 27px;
+        }
+
+        #social {
+            font-size: 53px;
+            margin: 15px;
+        }
+
+        .visa {
+            font-family: 'Russo One';
+            font-size: 18px;
+            color: #f44336;
+            padding-left: 90px;
+        }
         
     </style>
 </head>
 <body>
-    <div style="background-image: url(../../Imagen/mejores-aerolineas-sudamerica.jpg); background-repeat: no-repeat; background-size: 100% 100%; height: 13%">
+    <div style="background-image: url(../../Imagen/mejores-aerolineas-sudamerica.jpg); background-repeat: no-repeat; background-size: 100% 100%; height: 63%">
         <!--BARRA DE MENU-->
-        <div id="menu" style="background-color: #f44336; border: solid; float: right; width: 670px; height: 30px; margin-top: 15px; margin-right: 15px;">
+        <div id="menu" style="background-color: #f44336; border: solid; position:fixed; width: 670px; height: 30px; margin-top: 15px; margin-right: 15px; right:10px">
             <ul style="margin-top: 11px; width: max-content;">
                 <li id="menuop">
                     <a href="#" style="color: #bdbdbd; position:relative; top:-11px;">
@@ -287,100 +372,184 @@
                 <button onclick="showPanel(2,'rgba(0, 0, 0, 0)')">Check-In</button>
                 <button onclick="showPanel(3,'rgba(0, 0, 0, 0)')">Estado de Vuelo</button>
             </div><br />
-                  <div class="tabPanel">
-                      <div class="tabPanelCheck">
-                          <div class="tabContainerCheck">
-                              <div class="buttonContainerCheck">
-                                  <ul style="list-style:none;">
-                                      <label>
-                                          <input name="radio-button" type="radio" onclick="showPanelReserva(0,'rgba(0, 0, 0, 0)')" checked />
-                                          <span>Ida y Vuela</span>
-                                      </label>
-                                      <label>
-                                          <input name="radio-button" type="radio" onclick="showPanelReserva(1,'rgba(0, 0, 0, 0)')" />
-                                          <span>Solo Ida</span>
-                                      </label>
-                                      <label>
-                                          <input name="radio-button" type="radio" onclick="showPanelReserva(2,'rgba(0, 0, 0, 0)')" />
-                                          <span>Multidestino</span>
-                                      </label>
-                                  </ul>
-                              </div>
-                              <div class="tabPanelCheckasdf">
-                                  <div id="menuvuelo">
-                          <ul>
-                              <li id="menuopvuelo">
-                                  <a href="#" style="text-decoration: underline;">
-                                      Ida y Vuela
-                                  </a>
-                              </li>
-                              <li id="menuopvuelo" style="font-weight:normal">
-                                  <a href="#">
-                                      Solo Ida
-                                  </a>
-                              </li>
-                              <li id="menuopvuelo" style="font-weight:normal">
-                                  <a href="#">
-                                      Multidestino
-                                  </a>
-                              </li>
-                          </ul>
-                      </div>
+            <!--Reserva tu vuelo-->
 
+            <div class="tabPanel">
+                <div class="tabPanelReserve">
+                    <div class="tabContainerReserve">
+                        <div class="buttonContainerReserve">
+                            <ul style="list-style:none;">
+                                <label>
+                                    <input name="radio-button-reserve" type="radio" onclick="showPanelReserve(0,'rgba(0, 0, 0, 0)')" checked />
+                                    <span>Ida y Vuela</span>
+                                </label>
+                                <label>
+                                    <input name="radio-button-reserve" type="radio" onclick="showPanelReserve(1,'rgba(0, 0, 0, 0)')" />
+                                    <span>Solo Ida</span>
+                                </label>
+                                <label>
+                                    <input name="radio-button-reserve" type="radio" onclick="showPanelReserve(2,'rgba(0, 0, 0, 0)')" />
+                                    <span>Multidestino</span>
+                                </label>
+                            </ul>
+                        </div>
+                        <div class="tabPanelReserve">
+                            <div>
+                                <!--RESERVA TU VUELO / IDA Y VUELTA-->
+                                <div>
+                                    <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
+                                    <label class="info">En Que Fechas Deseas Viajar     <i class="fa fa-calendar"></i></label>
+                                    <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
+                                </div>
 
-                      <br />
-                      <div>
-                          <!--RESERVA TU VUELO / IDA Y VUELTA-->
-                          <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
-                          <label class="info">En Que Fecha Deseas Viajar     <i class="fa fa-calendar"></i></label>
-                          <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
+                                <label class="info2">Desde</label>
+                                <label class="info2">Hasta</label>
+                                <label class="info3">Sales</label>
+                                <label class="info3">Regresas</label>
 
-                          <br /><br />
+                                <br /><br />
 
-                          <label class="info2">Desde</label>
-                          <label class="info2">Hasta</label>
-                          <label class="info3">Sales</label>
-                          <label class="info3">Regresas</label>
+                                <input type="text" id="Origen" name="Origen" class="info4" />
+                                <input type="text" id="Destino" name="Destino" class="info4" />
+                                <input type="date" id="Sales" name="Sales" class="info5" />
+                                <input type="date" id="Sales" name="Sales" class="info5" />
+                                <ul style="float: right">
+                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" /></li>
+                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" /></li>
+                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" /></li>
+                                    <ul style="float: right">
+                                        <li class="clase2">
+                                            <input type="radio" id="Economica" name="class" value="Economica" checked/>
+                                            <label>Económica</label>
+                                        </li>
+                                        <br />
+                                        <li class="clase2">
+                                            <input type="radio" id="Ejecutivo" name="class" value="Ejecutivo" />
+                                            <label>Ejecutivo</label>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div>
+                                <input type="button" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" />
+                            </div>
+                        </div>
+                        <div class="tabPanelReserve">
+                            <div>
+                                <!--RESERVA TU VUELO / IDA Y VUELTA-->
+                                <div>
+                                    <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
+                                    <label class="info">En Que Fecha Deseas Viajar     <i class="fa fa-calendar"></i></label>
+                                    <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
+                                </div>
 
-                          <br /><br />
+                                <label class="info2">Desde</label>
+                                <label class="info2">Hasta</label>
+                                <label class="info6">Fecha de ida</label>
 
-                          <input type="text" id="Origen" name="Origen" placeholder="Origen" class="info4" />
-                          <input type="text" id="Destino" name="Destino" placeholder="Destion" class="info4" />
-                          <input type="date" id="Sales" name="Sales" class="info5" />
-                          <input type="date" id="Sales" name="Sales" class="info5" />
-                          <ul style="float: right">
-                              <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" /></li>
-                              <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" /></li>
-                              <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" /></li>
-                              <ul style="float: right">
-                                  <li class="clase2">
-                                      <input type="radio" id="Economica" name="Economica" value="Economica" />
-                                      <label>Económica</label>
-                                  </li>
-                                  <br />
-                                  <li class="clase2">
-                                      <input type="radio" id="Ejecutivo" name="Ejecutivo" value="Ejecutivo" />
-                                      <label>Ejecutivo</label>
-                                  </li>
-                              </ul>
-                          </ul>
-                      </div>
-                      <div>
-                          <input type="button" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" />
-                      </div>
-                              </div>
-                              <div class="tabPanelCheckasdf">
-                                 test
-                              </div>
+                                <br /><br />
 
-                          </div>
-                      </div>
-                  </div>
+                                <input type="text" id="Origen" name="Origen" class="info4" />
+                                <input type="text" id="Destino" name="Destino" class="info4" />
+                                <input type="date" id="Sales" name="Sales" class="info7" />
+                                <ul style="float: right">
+                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" /></li>
+                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" /></li>
+                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" /></li>
+                                    <ul style="float: right">
+                                        <li class="clase2">
+                                            <input type="radio" id="Economica" name="class1" value="Economica" checked />
+                                            <label>Económica</label>
+                                        </li>
+                                        <br />
+                                        <li class="clase2">
+                                            <input type="radio" id="Ejecutivo" name="class1" value="Ejecutivo" />
+                                            <label>Ejecutivo</label>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div>
+                                <input type="button" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" />
+                            </div>
+                        </div>
+                        <div class="tabPanelReserve">
+                            <div>
+                                <!--RESERVA TU VUELO / IDA Y VUELTA-->
+                                <div>
+                                    <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
+                                    <label class="info">En Que Fechas Deseas Viajar     <i class="fa fa-calendar"></i></label>
+                                    <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
+                                </div>
+
+                                <label class="info2">Desde</label>
+                                <label class="info2">Hasta</label>
+                                <label class="info3">Sales</label>
+                                <label class="info3">Regresas</label>
+
+                                <br />
+                                <h4 style="position: absolute; left: 5%;">1</h4>
+                                <input type="text" id="Origen" name="Origen" class="info4" />
+                                <input type="text" id="Destino" name="Destino" class="info4" />
+                                <input type="date" id="Sales" name="Sales" class="info5" />
+                                <input type="date" id="Sales" name="Sales" class="info5" />
+                                <br />
+
+                                <ul style="float: right">
+                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" /></li>
+                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" /></li>
+                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" /></li>
+                                    <ul style="float: right">
+                                        <li class="clase2">
+                                            <input type="radio" id="Economica" name="class" value="Economica" checked />
+                                            <label>Económica</label>
+                                        </li>
+                                        <br />
+                                        <li class="clase2">
+                                            <input type="radio" id="Ejecutivo" name="class" value="Ejecutivo" />
+                                            <label>Ejecutivo</label>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <h4 style="position: absolute; left: 5%;">2</h4>
+                                <input type="text" id="Origen" name="Origen" class="info4" />
+                                <input type="text" id="Destino" name="Destino" class="info4" />
+                                <input type="date" id="Sales" name="Sales" class="info5" />
+                                <input type="date" id="Sales" name="Sales" class="info5" />
+                            </div>
+                            <div>
+                                <input type="button" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!--Vista de Mis Viajes-->
             <div class="tabPanel">
-                Contenido Mis Viajes
-
+                <center>
+                    <br />
+                    <span>En este apartado puede modificar su itinerario de vuelo hasta 2 horas antes del mismo</span>
+                    <br /><br />
+                    <div>
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <span>Ingresa tu número de reserva</span>
+                                    <i class="fa fa-hashtag"></i>
+                                    <input type="text" class="form-control" style="max-width:60%">
+                                </div>
+                                <div class="col">
+                                    <span>Ingresa el apellido del pasajero</span>
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" class="form-control" style="max-width:60%" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </center>
+                <br /><br /><br />
+                <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 24px;background-color:#f44336">Continuar</button>
             </div>
 
             <!--Vista de Check-In-->
@@ -394,7 +563,7 @@
                             <ul style="list-style:none;">
                                 <li>
                                     <label>
-                                        <input name="radio-button" type="radio" onclick="showPanelCheck(0,'rgba(0, 0, 0, 0)')" checked />
+                                        <input checked name="radio-button" type="radio" onclick="showPanelCheck(0,'rgba(0, 0, 0, 0)')" />
                                         <span>Código de reserva</span>
                                     </label>
                                 </li>
@@ -415,7 +584,7 @@
                                             <div class="col">
                                                 <span>Ingresa tu código de reserva</span>
                                                 <i class="fa fa-hashtag"></i>
-                                                <input type="text" class="form-control" style="max-width:60%" placeholder="First name">
+                                                <input type="text" class="form-control" style="max-width:60%">
                                             </div>
                                             <div class="col">
                                                 <span>Ingresa la fecha de salida del vuelo</span>
@@ -426,7 +595,7 @@
                                     </form>
                                 </div>
                             </center>
-                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;">Continuar</button>
+                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button>
                         </div>
                         <div class="tabPanelCheck">
                             <center>
@@ -436,7 +605,7 @@
                                             <div class="col">
                                                 <span>Ingresa tu número de viajero frecuente</span>
                                                 <i class="fa fa-hashtag"></i>
-                                                <input type="text" class="form-control" style="max-width:60%" placeholder="First name">
+                                                <input type="text" class="form-control" style="max-width:60%">
                                             </div>
                                             <div class="col">
                                                 <span>Ingresa la fecha de salida del vuelo</span>
@@ -447,17 +616,137 @@
                                     </form>
                                 </div>
                             </center>
-                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;">Continuar</button>
+                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
 
             <!--Vista de Estado de Vuelo-->
-            <div class="tabPanel">Contenido Estado De Vuelo</div>
-        </div>
+            <div class="tabPanel">
+                <div class="tabPanelFly">
+                    <div class="tabContainerFly">
+                        <div class="buttonContainerFly">
+                            <center style="margin-top: 25px;">
+                                <span>Consulta en tiempo real la hora de salida y llegada de tus vuelos. También conoce los cambios operacionales en nuestros itinerarios.</span>
+                            </center>
+                            <ul style="list-style:none;">
+                                <li>
+                                    <label>
+                                        <input name="radio-button-fly" type="radio" onclick="showPanelFly(0,'rgba(0, 0, 0, 0)')" checked />
+                                        <span>Ruta</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input name="radio-button-fly" type="radio" onclick="showPanelFly(1,'rgba(0, 0, 0, 0)')" />
+                                        <span>Número de vuelo</span>
+                                    </label>
 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabPanelFly">
+                            <center>
+                                <div>
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <span>Origen</span>
+                                                <i class="fa fa-plane"></i>
+                                                <input type="text" class="form-control" style="max-width:60%">
+                                            </div>
+                                            <div class="col">
+                                                <span>Destino</span>
+                                                <i class="fa fa-plane"></i>
+                                                <input type="text" class="form-control" style="max-width:60%">
+                                            </div>
+                                            <div class="col">
+                                                <span>Ingresa la fecha de tu vuelo</span>
+                                                <i class="fa fa-calendar"></i>
+                                                <input type="date" class="form-control" style="max-width:60%" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </center>
+                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button>
+                        </div>
+                        <div class="tabPanelFly">
+                            <center>
+                                <div>
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <span>Número de vuelo</span>
+                                                <i class="fa fa-hashtag"></i>
+                                                <input type="text" class="form-control" style="max-width:60%">
+                                            </div>
+                                            <div class="col">
+                                                <span>Ingresa la fecha de tu vuelo</span>
+                                                <i class="fa fa-calendar"></i>
+                                                <input type="date" class="form-control" style="max-width:60%" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </center>
+                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!--INFORMACION-->
+        <div>
+            <center>
+                <header class="header" style="padding-left: 20%; ">Información</header>
+            </center>
+            <div style="border: 2px solid; margin: 2px;" class="imagen">
+                <article class="titulo_info">¿Quieres Viajar, pero no sabes si necesitas Visa? Descubrelo Aquí!</article>
+                <pre class="contenido_info">
+                En este artículo encontrarás todo lo relacionado con los requisitos de ingreso a todos los paises del mundo, entra y 
+                descubre si puedes ingresar sólo con tu pasaporte o si necesitas visa.
+
+                Encuentra todas las normativas necesarias para aplicar a una visa y así puedas encontrarte con tu destino!.
+            </pre>
+                <a href="#" class="visa">PRESIONA AQUÍ PARA MÁS INFORMACIÓN</a>
+            </div>
+            <br />
+            <div style="border: 2px solid; margin: 2px;" class="imagen1">
+                <article class="titulo_info">¿Frío o Calor? ¿Relax o Rumba? ¡Descubre tu destino ideal!  </article>
+                <pre class="contenido_info">
+                Descubre cuál es tu destino perfecto llenando un facil cuestionario.
+
+                Quedarás encantado con los lugares que se ajustan a tus gustos y preferencias.
+
+                Después de conocer tu destino ideal, no podrás quedarte en casa!.
+            </pre>
+            </div>
+        </div>
+        <div>
+            <br />
+            <center>
+                <img src="~/Imagen/aeropuerto.jpg" style=" width:99%; height: 507px;" />
+            </center>
+        </div>
+        <br />
+        <!--CONTACTO-->
+        <div style="border: 2px solid; margin: 2px;" class="contacto">
+            <label class="contacto1">¿Necesitas ayuda personalizada?</label><br />
+            <label class="contacto2">Contactanos</label><br />
+            <pre class="contacto3">Comunicate de manera gratuita al
+        (+502) 5555-5555</pre>
+            <div style="text-align:center">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook-square" id="social"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" id="social"></i></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram" id="social"></i></a>
+                <a href="https://accounts.google.com/Login/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"><i class="fa fa-google-plus-square" id="social"></i></a>
+            </div>
+        </div>
     </div>
 
     <script src="~/Scripts/tabmenu.js"></script>
