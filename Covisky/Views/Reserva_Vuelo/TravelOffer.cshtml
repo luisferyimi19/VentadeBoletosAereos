@@ -209,7 +209,7 @@
 
         body {
             margin: 0px !important;
-            height: 5000px;
+            height: 1000px;
         }
 
         label > input[type="radio"] {
@@ -290,13 +290,83 @@
             text-align:center;
             box-shadow: 2px 2px 10px #666;
         }
+        .titulo_info {
+            padding-left: 90px;
+            padding-top: 30px;
+            font-family: 'Source Sans Pro';
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contenido_info {
+            font-family: 'Source Sans Pro';
+            font-size: 16px;
+            max-width: 70%;
+            height: 97px;
+            padding-left: 38px;
+        }
+
+        .imagen {
+            background-image: url(../../Imagen/pasaporte.jpg);
+            background-position: 98%;
+            background-size: 289px 193px;
+            background-repeat: no-repeat;
+            height: 215px;
+        }
+
+        .imagen1 {
+            background-image: url(../../Imagen/turismo.jpg);
+            background-position: 98%;
+            background-size: 289px 193px;
+            background-repeat: no-repeat;
+            height: 215px;
+        }
+
+        .contacto {
+            background-image: url(../../Imagen/continente1.jpg);
+            background-position: right;
+            background-size: 507px 296px;
+            background-repeat: no-repeat;
+            height: 300px;
+            text-align: center;
+        }
+
+        .contacto1 {
+            font-family: 'Source Sans Pro';
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contacto2 {
+            font-family: 'Russo One';
+            font-size: 49px;
+            color: #f44336;
+        }
+
+        .contacto3 {
+            font-family: 'Source Sans Pro';
+            font-size: 27px;
+        }
+
+        #social {
+            font-size: 53px;
+            margin: 15px;
+        }
+
+        .visa {
+            font-family: 'Russo One';
+            font-size: 18px;
+            color: #f44336;
+            padding-left: 90px;
+        }
     </style>
 </head>
 <body>
     <!--ENCABEZADO-->
     <div>
         <!--BARRA DE MENU-->
-        <div id="menu" style="background-color: #f44336; border: solid; float: right; width: 670px; height: 30px; margin-top: 15px; margin-right: 15px;">
+        <div id="menu" style="background-color: #f44336; border: solid; position:fixed; width: 670px; height: 30px; margin-top: 15px; margin-right: 15px; right:10px">
             <ul style="margin-top: 11px; width: max-content;">
                 <li id="menuop">
                     <a href="~/Reserva_Vuelo/Index" style="position:relative; top:-11px;">
@@ -388,6 +458,53 @@
                 <label class="tipo">Ida y Vuelta</label>
                 <input type="button" id="Ir1" name="Ir1" value="IR" class="ir" />
             </div>
+        </div>
+    </div>
+    <!--INFORMACION-->
+    <div>
+        <center>
+            <header class="header" style="text-align: center; ">Información</header>
+        </center>
+        <div style="border: 2px solid; margin: 2px;" class="imagen">
+            <article class="titulo_info">¿Quieres Viajar, pero no sabes si necesitas Visa? Descubrelo Aquí!</article>
+            <pre class="contenido_info">
+                En este artículo encontrarás todo lo relacionado con los requisitos de ingreso a todos los paises del mundo, entra y 
+                descubre si puedes ingresar sólo con tu pasaporte o si necesitas visa.
+
+                Encuentra todas las normativas necesarias para aplicar a una visa y así puedas encontrarte con tu destino!.
+            </pre>
+            <a href="#" class="visa">PRESIONA AQUÍ PARA MÁS INFORMACIÓN</a>
+        </div>
+        <br />
+        <div style="border: 2px solid; margin: 2px;" class="imagen1">
+            <article class="titulo_info">¿Frío o Calor? ¿Relax o Rumba? ¡Descubre tu destino ideal!  </article>
+            <pre class="contenido_info">
+                Descubre cuál es tu destino perfecto llenando un facil cuestionario.
+
+                Quedarás encantado con los lugares que se ajustan a tus gustos y preferencias.
+
+                Después de conocer tu destino ideal, no podrás quedarte en casa!.
+            </pre>
+        </div>
+    </div>
+    <div>
+        <br />
+        <center>
+            <img src="~/Imagen/aeropuerto.jpg" style=" width:99%; height: 507px;" />
+        </center>
+    </div>
+    <br />
+    <!--CONTACTO-->
+    <div style="border: 2px solid; margin: 2px;" class="contacto">
+        <label class="contacto1">¿Necesitas ayuda personalizada?</label><br />
+        <label class="contacto2">Contactanos</label><br />
+        <pre class="contacto3">Comunicate de manera gratuita al
+        (+502) 5555-5555</pre>
+        <div style="text-align:center">
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook-square" id="social"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" id="social"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram" id="social"></i></a>
+            <a href="https://accounts.google.com/Login/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"><i class="fa fa-google-plus-square" id="social"></i></a>
         </div>
     </div>
 
