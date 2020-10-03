@@ -107,6 +107,7 @@
     <Content Include="CSS\ionicons.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Imagen\continente1.png" />
     <Content Include="Imagen\logo.png" />
     <Content Include="Imagen\mejores-aerolineas-sudamerica%281%29.jpg" />
     <Content Include="Imagen\mejores-aerolineas-sudamerica%282%29.jpg" />
@@ -216,6 +217,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Reserva_Vuelo\Checkin.cshtml" />
+    <Content Include="Views\Reserva_Vuelo\TravelOffer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

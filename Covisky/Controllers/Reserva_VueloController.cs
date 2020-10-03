@@ -19,5 +19,10 @@ namespace Covisky.Controllers
         {
             return View();
         }
+
+        public ActionResult TravelOffer()
+        {
+            return View();
+        }
     }
 }
