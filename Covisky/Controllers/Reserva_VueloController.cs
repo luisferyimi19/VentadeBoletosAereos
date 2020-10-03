@@ -24,5 +24,10 @@ namespace Covisky.Controllers
         {
             return View();
         }
+
+        public ActionResult Misviajes()
+        {
+            return View();
+        }
     }
 }
