@@ -29,5 +29,10 @@ namespace Covisky.Controllers
         {
             return View();
         }
+
+        public ActionResult Miles()
+        {
+            return View();
+        }
     }
 }
