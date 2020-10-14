@@ -34,5 +34,9 @@ namespace Covisky.Controllers
         {
             return View();
         }
+        public ActionResult SelectTravel()
+        {
+            return View();
+        }
     }
 }
