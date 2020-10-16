@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8" />
-    <title>Elije tu Vuelo</title>
+    <title>Información</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
@@ -209,10 +209,7 @@
 
         body {
             margin: 0px !important;
-        }
-
-        html{
-            height: 650px;
+            height: 850px;
         }
 
         label > input[type="radio"] {
@@ -375,7 +372,7 @@
             color: #f44336;
             font-size: 72px;
             font-family: Russo One;
-            text-align:center;
+            text-align: center;
             padding-left: 35%;
         }
 
@@ -400,7 +397,7 @@
             font-weight: bold;
         }
 
-        .vuelo{
+        .vuelo {
             font-family: 'Source Sans Pro';
             font-size: 18px;
         }
@@ -408,6 +405,39 @@
         .horavuelo {
             font-family: 'Source Sans Pro';
             font-size: 22px;
+        }
+        .headerpasajero {
+            color: #f44336;
+            font-size: 26px;
+            font-family: Russo One;
+            padding-left: 68px;
+            color: black;
+        }
+        .titulo {
+            color: #f44336;
+            font-size: 20px;
+            font-family: 'Source Sans Pro';
+            padding-left: 20px;
+            font-weight: bold;
+            color: black;
+        }
+        .personal{
+            font-family: 'Source Sans Pro';
+            font-size: 16px;
+        }
+        .texto{
+            width: 400px;
+        }
+        .btncontinuar {
+            font-family: 'Source Sans Pro';
+            font-size: 20px;
+            font-weight: bold;
+            width: 135px;
+            height: 50px;
+            background-color: #f44336;
+            float: right;
+            position: relative;
+            right: 20px;
         }
     </style>
 </head>
@@ -424,7 +454,7 @@
                     </a>
                 </li>
                 <li id="menuop">
-                    <a href="~/Reserva_Vuelo/TravelOffer"style="position:relative; top:-11px;">
+                    <a href="~/Reserva_Vuelo/TravelOffer" style="position:relative; top:-11px;">
                         <i class="fa fa-tag"></i>
                         Oferta de Viajes
                     </a>
@@ -456,111 +486,67 @@
         <br />
     </div>
 
-    <!--ELEGIR VIAJE-->
-    <div style=" margin-left: 25px; margin-right: 25px; border: 2px solid;">
-        <header class="header2" style="color:black;">Recuerde que puede comprar con sus Puntos/Millas + Dinero</header>
-        <div class="form-group" style="text-align:center;">
-            <div style="display:inline-block;">
-                <label>Programa de Lealtad</label><br />
-                <input type="text" id="ProgramaLealtad" name="ProgramaLealtad" value="PROGRAMA UMG" readonly="readonly"/>
-            </div>
-
-            <div style="display:inline-block">
-                <label>Viaje Corto</label><br />
-                <input type="text" id="viajecorto" name="viajecorto"/>
-            </div>
-
-            <div style="display:inline-block">
-                <label>Viaje Intermedio</label><br />
-                <input type="text" id="viajeintermedio" name="viajeintermedio"/>
-            </div>
-
-            <div style="display:inline-block">
-                <label>Viaje Largo</label><br />
-                <input type="text" id="viajelargo" name="viajelargo"/>
-            </div>
-        </div>
+    <!--TITULO INFORMACION-->
+    <div >
+        <header class="headerpasajero">Información Del Pasajero</header>
+        <pre style="text-align:center; font-family:'Source Sans Pro'; font-size: 18px">Ingresa el primer nombre y el primer apellido tal y como aparecen en el pasaporte o documento de identidad de los pasajeros. También, ingrese su correo electrónico y 
+número de teléfono para poder contactarle si hubiera alguna información nueva que proporcionarle.</pre>
     </div>
-    <br />
-
-    <div style=" margin-left: 300px; margin-right: 300px; border: 2px solid; height:30%; padding:25px;">
-        <!--ELECCION VUELO IDA-->
-        <div>
-            <label class="vuelo">IDA:</label>
-            &nbsp;&nbsp;&nbsp;
-            <label id="origen" name="origen" class="vuelo">(Pais Origen)</label>
-            &nbsp;&nbsp;&nbsp;
-            <i class="fa fa-chevron-right"></i>
-            &nbsp;&nbsp;&nbsp;
-            <label id="destino" name="destino" class="vuelo">(Pais Destino)</label>
+    <div>
+        <!--INFO PERSONAL-->
+        <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height: 140px">
+            <header class="titulo" style="background-color: white">Pasajero</header>
+            <div>
+                <label class="personal" style="font-weight: bold; padding-left: 20px;">Información Personal</label>
+                <br />
+                <div style="display:inline-block; padding-left: 20px">
+                    <label>Apellido(s):*</label><br />
+                    <input required type="text" id="apellido" name="apellido" placeholder="Ingrese Su Apellido(s)" class="texto" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="display:inline-block">
+                    <label>Nombre(s):*</label><br />
+                    <input required type="text" id="nombre" name="nombre" placeholder="Ingrese Su Nombre(s)" class="texto" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="display:inline-block">
+                    <label>Fecha de Nacimiento:*</label><br />
+                    <input required type="date" id="fechanac" name="fechanac" class="texto" />
+                </div>
+            </div>
         </div>
-
-        <div style="display:inline-block">
-            <label class="vuelo">SALE</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label class="vuelo">LLEGA</label>
-            <br />
-            <label class="horavuelo" id="horasale" name="horasale">06:00</label>
-            &nbsp;
-            <i class="fa fa-arrow-right"></i>
-            &nbsp;
-            <label class="horavuelo" id="horallega" name="horallega">06:50</label>
+        <br />
+        <!--INFO CONTACTO-->
+        <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height: 110px">
+            <header class="titulo" style="background-color: white; color: #f44336">Información Sobre Contactos</header>
+            <div>
+                <div style="display:inline-block; padding-left: 20px">
+                    <label>Correo Electrónico:*</label><br />
+                    <input required type="text" id="correo" name="correo" placeholder="Ingrese Su Apellido(s)" class="texto" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="display:inline-block">
+                    <label>Confirme Su Correo Electrónico:*</label><br />
+                    <input required type="text" id="confirmarcorreo" name="confirmarcorreo" placeholder="Ingrese Su Nombre(s)" class="texto" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="display:inline-block">
+                    <label>Teléfono:*</label><br />
+                    <input required type="tel" id="telefono" name="telefono" placeholder="Ingrese Su Número de Teléfono" class="texto" />
+                </div>
+            </div>
         </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div style="display:inline-block; text-align:center">
-            <label class="vuelo">CLASE ECONÓMICA</label><br />
-            <input type="button" id="economica" name="economica" value="$500" class="btn btn-info" />
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div style="display:inline-block; text-align:center">
-            <label class="vuelo">CLASE EJECUTIVA</label><br />
-            <input type="button" id="ejecutiva" name="ejecutiva" value="$500" class="btn btn-success" />
-        </div>
-
-        <br /><br />
-
-        <!--ELECCION VUELO VUELTA-->
-        <div>
-            <label class="vuelo">VUELTA:</label>
-            &nbsp;&nbsp;&nbsp;
-            <label id="origen" name="origen" class="vuelo">(Pais Destino)</label>
-            &nbsp;&nbsp;&nbsp;
-            <i class="fa fa-chevron-right"></i>
-            &nbsp;&nbsp;&nbsp;
-            <label id="destino" name="destino" class="vuelo">(Pasi Origen)</label>
-        </div>
-
-        <div style="display:inline-block">
-            <label class="vuelo">SALE</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label class="vuelo">LLEGA</label>
-            <br />
-            <label class="horavuelo">06:00</label>
-            &nbsp;
-            <i class="fa fa-arrow-right"></i>
-            &nbsp;
-            <label class="horavuelo">06:50</label>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div style="display:inline-block; text-align:center">
-            <label class="vuelo">CLASE ECONÓMICA</label><br />
-            <input type="button" id="economica" name="economica" value="$500" class="btn btn-info" />
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div style="display:inline-block; text-align:center">
-            <label class="vuelo">CLASE EJECUTIVA</label><br />
-            <input type="button" id="ejecutiva" name="ejecutiva" value="$500" class="btn btn-success" />
-        </div>
-
-        <!--COSTO TOTAL-->
-        <div style="float:right; position:relative; top:-185px; padding-right:20px; text-align:center">
-            <label class="infovuelo">VALOR TOTAL:</label><br />
-            <label class="totalinfovuelo">USD 0.00</label><br />
-            <label class="infovuelo">Tarifa Base: 0.0</label><br />
-            <label class="infovuelo">Impuestos: 0.0</label><br />
-            <label class="infovuelo">Cargos: 0.0</label><br />
-            <a href="~/Reserva_Vuelo/Information"><input type="button" id="ejecutiva" name="ejecutiva" value="SOLICITAR" class="botonvuelo" /></a><br />
-            <label class="infovuelo">Incluye Cargos e Impuestos</label><br />
+        <br />
+        <!--ACEPTACION-->
+        <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height:220px">
+            <header class="titulo" style="background-color: white;">Aceptación de términos y condiciones</header>
+            <div>
+                <label style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;">Por favor acepta para poder continuar con tu compra.</label><br />
+                <pre style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;"><input required type="checkbox" id="leido" name="leido" value="Leido" />&nbsp;&nbsp;&nbsp;He leído y acepto el contrato de transporte, la Política General de Privacidad de clientes, viajeros y usuarios y las condiciones de manejo de mercancías peligrosas, la política de cancelación y 
+   penalidades por cambio, el cobro de impuestos y cargos gubernamentales no incluidos en el valor del servicio, así como aquellos incluidos y las condiciones de acceso uso de este sitio web.*</pre>
+                <label style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;"><input required type="checkbox" id="acepto" name="acepto" value="Acepto" />&nbsp;&nbsp;&nbsp;Acepto el uso de mis datos personales para recibir promociones, ofertas y novedades que COVISKY tiene para mí</label><br />
+                <input type="button" id="btninfo" name="btninfo" value="CONTINUAR" class="btncontinuar" /><br />
+            </div>
         </div>
     </div>
 

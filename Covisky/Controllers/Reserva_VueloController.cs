@@ -38,5 +38,10 @@ namespace Covisky.Controllers
         {
             return View();
         }
+
+        public ActionResult Information()
+        {
+            return View();
+        }
     }
 }
