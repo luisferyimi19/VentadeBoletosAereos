@@ -220,6 +220,8 @@
     <Content Include="Views\Reserva_Vuelo\Misviajes.cshtml" />
     <Content Include="Views\Reserva_Vuelo\TravelOffer.cshtml" />
     <Content Include="Views\Reserva_Vuelo\Miles.cshtml" />
+    <Content Include="Views\Reserva_Vuelo\Pago.cshtml" />
+    <Content Include="Views\Reserva_Vuelo\Checkin2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

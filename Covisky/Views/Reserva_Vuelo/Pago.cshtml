@@ -1,0 +1,518 @@
+﻿@model Covisky.Models.Clases.Reserva
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <title>Reserva Tu Vuelo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+    <link href="jAlert/jquery.alerts.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .header {
+            color: #f44336;
+            font-size: 72px;
+            font-family: Russo One;
+            padding-top: 55px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+            a:hover {
+                text-decoration: none;
+                color: #bdbdbd;
+            }
+
+        #menu ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        #menu li {
+            display: inline;
+            text-align: center;
+            margin: 30px;
+        }
+
+        #menuop {
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .slogan {
+            color: black;
+            font-size: 26px;
+            font-family: Russo One;
+            float: right;
+            position: relative;
+            top: -50px;
+            padding-right: 50px;
+        }
+
+        .tabContainer {
+            padding: 20px;
+            width: 100%;
+            height: 350px;
+        }
+
+            .tabContainer .buttonContainer {
+                height: 15%;
+            }
+
+                .tabContainer .buttonContainer button {
+                    width: 25%;
+                    height: 100%;
+                    float: left;
+                    border-radius: 10px;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    font-family: Source Sans Pro;
+                    color: black;
+                    font-size: 22px;
+                    font-weight: bold;
+                    background-color: #f44336;
+                }
+
+                    .tabContainer .buttonContainer button:hover {
+                        background-color: #bdbdbd;
+                    }
+
+            .tabContainer .tabPanel {
+                height: 100%;
+                background-color: gray;
+                color: black;
+                box-sizing: border-box;
+                font-family: 'Source Sans Pro';
+                font-weight: bold;
+                font-size: 18px;
+                display: none;
+                border: 2px solid;
+            }
+
+        #menuvuelo ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        #menuvuelo li {
+            display: inline;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #menuopvuelo {
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .info {
+            font-weight: normal;
+            font-size: 20px;
+            margin-left: 10%;
+        }
+
+        .info2 {
+            margin: 0px;
+            font-weight: normal;
+            padding-left: 133px;
+            font-size: 20px;
+        }
+
+        .info3 {
+            font-weight: normal;
+            padding-left: 140px;
+            font-size: 20px;
+        }
+
+        .info4 {
+            margin-right: 35px;
+            font-weight: normal;
+            position: relative;
+            left: 90px;
+            width: 12%;
+        }
+
+        .info5 {
+            margin-right: 48px;
+            font-weight: normal;
+            position: relative;
+            left: 94px;
+            width: 13%;
+        }
+
+        .info6 {
+            font-weight: normal;
+            padding-left: 18%;
+            font-size: 20px;
+        }
+
+        .info7 {
+            margin-right: 48px;
+            font-weight: normal;
+            position: relative;
+            left: 13%;
+            width: 22%;
+        }
+
+        .clase {
+            list-style-type: none;
+            position: relative;
+            right: 180px;
+            top: -50px;
+        }
+
+        .clase2 {
+            list-style-type: none;
+            position: relative;
+            right: 90px;
+            top: -125px;
+        }
+
+        .number {
+            width: 50px;
+            position: relative;
+            left: 10px;
+        }
+
+        .number1 {
+            width: 50px;
+            position: relative;
+            left: 25px;
+        }
+
+        .number2 {
+            width: 50px;
+            position: relative;
+            left: 23px;
+        }
+
+        .boton {
+            font-family: 'Source Sans Pro';
+            color: white;
+            font-size: 16px;
+            width: 135px;
+            height: 50px;
+            background-color: #f44336;
+            position: absolute;
+            right: 28px;
+            margin-top: 46px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        body {
+            margin: 0px !important;
+            height: 1000px;
+        }
+
+        label > input[type="radio"] {
+            display: none;
+        }
+
+            label > input[type="radio"] + *::before {
+                content: "";
+                display: inline-block;
+                vertical-align: bottom;
+                width: 1rem;
+                height: 1rem;
+                margin-right: 0.3rem;
+                border-radius: 50%;
+                border-style: solid;
+                border-width: 0.1rem;
+                border-color: gray;
+                margin-bottom: 5px;
+            }
+
+            label > input[type="radio"]:checked + * {
+                text-decoration: underline;
+            }
+
+                label > input[type="radio"]:checked + *::before {
+                    background: radial-gradient(#333 0%, #333 40%, transparent 50%, transparent);
+                    border-color: #333;
+                }
+
+            label > input[type="radio"] + * {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+            }
+
+        .titulo_info {
+            padding-left: 90px;
+            padding-top: 30px;
+            font-family: 'Source Sans Pro';
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contenido_info {
+            font-family: 'Source Sans Pro';
+            font-size: 16px;
+            max-width: 70%;
+            height: 97px;
+            padding-left: 38px;
+        }
+
+        .imagen {
+            background-image: url(../../Imagen/pasaporte.jpg);
+            background-position: 98%;
+            background-size: 289px 193px;
+            background-repeat: no-repeat;
+            height: 215px;
+        }
+
+        .imagen1 {
+            background-image: url(../../Imagen/turismo.jpg);
+            background-position: 98%;
+            background-size: 289px 193px;
+            background-repeat: no-repeat;
+            height: 215px;
+        }
+
+        .contacto {
+            background-image: url(../../Imagen/continente1.jpg);
+            background-position: right;
+            background-size: 507px 296px;
+            background-repeat: no-repeat;
+            height: 300px;
+            text-align: center;
+        }
+
+        .contacto1 {
+            font-family: 'Source Sans Pro';
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contacto2 {
+            font-family: 'Russo One';
+            font-size: 49px;
+            color: #f44336;
+        }
+
+        .contacto3 {
+            font-family: 'Source Sans Pro';
+            font-size: 27px;
+        }
+
+        #social {
+            font-size: 53px;
+            margin: 15px;
+        }
+
+        .visa {
+            font-family: 'Russo One';
+            font-size: 18px;
+            color: #f44336;
+            padding-left: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div style=" background-repeat: no-repeat; background-size: 100% 100%; height: 63%">
+        <!--BARRA DE MENU-->
+        <div id="menu" style="background-color: #f44336; border: solid; position:fixed; width: 670px; height: 30px; margin-top: 15px; margin-right: 15px; right:10px">
+            <ul style="margin-top: 11px; width: max-content;">
+                <li id="menuop">
+                    <a href="~/Reserva_Vuelo/Index" style="color: #bdbdbd; position:relative; top:-11px;">
+                        <i class="fa fa-home"></i>
+                        Inicio
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="~/Reserva_Vuelo/TravelOffer" style="position:relative; top: -11px;">
+                        <i class="fa fa-tag"></i>
+                        Oferta de Viajes
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="~/Reserva_Vuelo/Misviajes" style="position:relative; top:-11px;">
+                        <i class="fa fa-briefcase"></i>
+                        Mis Viajes
+                    </a>
+                </li>
+                <li id="menuop">
+                    <a href="~/Reserva_Vuelo/Miles" style="position:relative; top:-11px;">
+                        <i class="fa fa-location-arrow"></i>
+                        Millas
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--LOGO Y TITULO-->
+        <div>
+            <img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
+            <a href="#" style="color:#ff000000"><header class="header">COVISKY</header></a>
+            <span class="slogan">FLY SAFE, FLY NOW,  FLY WITH COVISKY</span>
+        </div>
+       <b><HR/></b>
+        <br />
+        <!---PAGO-->
+        <div style=" margin: 30px; border: 2px solid ;  border: black 2px solid; background-color: #C0C0C0">
+             <form>
+                <div class="form-check">
+                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                           Tarjeta de crédito o débito
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card-2-back" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
+                            <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zM1 9h14v2H1V9z" />
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card-2-front-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
+                        </svg>
+                    </label>
+                </div>
+                 <!---INFORMACION DE LA TARJETA-->
+                <b><label for="inputAddress">Datos de Tarjeta</label></b>
+                <div class="form-row">
+                    <br />
+                    <div class="form-group col-md-3">
+                        <input type="tarjeta" class="form-control" placeholder="Número de tarjeta" id="inputtarjeta">
+                        <label for="inputEmail4">Escribir el número de la trajeta de crédito</label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="fecha_expir" class="form-control" placeholder="Fecha de expiración" id="inputfecha">
+                        <label for="inputPassword4">MM/AA</label>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="cod_segur" class="form-control" placeholder="CVV" id="inputcodigo_seg">
+                        <label for="inputPassword4">Ingrese codigo de seguridad</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    <select id="inputState" class="form-control">
+                        <label for="inputState">Lugar de Emisión de la tarjeta</label>
+                        <option selected>País...</option>
+                        <option>...</option>
+                    </select>
+                </div><hr width="85%" />
+                 <!--INFORMACION TITULAR DE LA TARJETA-->
+                <b> <label for="inputAddress">Datos titular de la Tarjeta</label></b>
+                <br /> <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <input type="nombre" class="form-control" placeholder="Nombre y Apellido" id="inputnombre">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <select id="inputState" class="form-control">
+                            <option selected>Tipo de documento...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="identificacion" class="form-control" placeholder="N°. de identificación" id="inputidentificacion">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <input type="correo" class="form-control" placeholder="Correo electrónico" id="inputcorreo">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="telefono" class="form-control" placeholder="Teléfono" id="inputTelefono">
+                    </div>
+                </div><hr width="85%" />
+                <b> <label for="inputAddress">Domicilo de facturación</label></b>
+                <br /> <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <input type="direccion" class="form-control" placeholder="Dirección" id="inputdirec">
+                        <label for="inputEmail4">Calle, número, edificio, apto,etc.</label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="email" class="form-control" placeholder="País" id="inputEmail4">
+                        <label for="inputEmail4">Lugar de residencia.</label>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="estado" class="form-control" placeholder="Estado / Departamento" id="inputestado">
+                    </div>
+                 
+                       <div>  <input type="button" id="Buscar" name="Buscar" value="Pago seguro" class="boton" /></div>
+                  </div>
+                       <div class="form-row">
+                            
+                           <div class="form-group col-md-3">
+                               <input type="cuidad" class="form-control" placeholder="Ciudad" id="inputCiudad">
+                           </div>
+
+
+                           <div class="form-group col-md-2">
+                               <input type="codigo_postal" class="form-control" placeholder="Código postal" id="inputCodigo_porstal">
+                           </div>
+                           
+                       </div>    
+                </form>   
+             </div>
+    <!--INFORMACION-->
+    <br />
+    <div>
+        <center>
+            <header class="header" style="padding-left: 20%; ">Información</header>
+        </center>
+        <div style="border: 2px solid; margin: 2px;" class="imagen">
+            <article class="titulo_info">¿Quieres Viajar, pero no sabes si necesitas Visa? Descubrelo Aquí!</article>
+            <pre class="contenido_info">
+                En este artículo encontrarás todo lo relacionado con los requisitos de ingreso a todos los paises del mundo, entra y 
+                descubre si puedes ingresar sólo con tu pasaporte o si necesitas visa.
+
+                Encuentra todas las normativas necesarias para aplicar a una visa y así puedas encontrarte con tu destino!.
+            </pre>
+            <a target="_blank" href="https://necesito-visa-gt.web.app/" class="visa">PRESIONA AQUÍ PARA MÁS INFORMACIÓN</a>
+        </div>
+        <br />
+        <div style="border: 2px solid; margin: 2px;" class="imagen1">
+            <article class="titulo_info">¿Frío o Calor? ¿Relax o Rumba? ¡Descubre tu destino ideal!  </article>
+            <pre class="contenido_info">
+                Descubre cuál es tu destino perfecto llenando un facil cuestionario.
+
+                Quedarás encantado con los lugares que se ajustan a tus gustos y preferencias.
+
+                Después de conocer tu destino ideal, no podrás quedarte en casa!.
+            </pre>
+        </div>
+    </div>
+    <div>
+        <br />
+        <center>
+            <img src="~/Imagen/aeropuerto.jpg" style=" width:99%; height: 507px;" />
+        </center>
+    </div>
+    <br />
+    <!--CONTACTO-->
+    <div style="border: 2px solid; margin: 2px;" class="contacto">
+        <label class="contacto1">¿Necesitas ayuda personalizada?</label><br />
+        <label class="contacto2">Contactanos</label><br />
+        <pre class="contacto3">Comunicate de manera gratuita al
+        (+502) 5555-5555</pre>
+        <div style="text-align:center">
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook-square" id="social"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" id="social"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram" id="social"></i></a>
+            <a href="https://accounts.google.com/Login/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"><i class="fa fa-google-plus-square" id="social"></i></a>
+        </div>
+    </div>
+    </div>
+
+    <script src="~/Scripts/tabmenu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
