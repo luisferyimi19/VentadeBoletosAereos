@@ -34,6 +34,16 @@ namespace Covisky.Controllers
         {
             return View();
         }
+
+        public ActionResult Pago()
+        {
+            return View();
+        }
+
+        public ActionResult Checkin2()
+        {
+            return View();
+        }
         public ActionResult SelectTravel()
         {
             return View();
