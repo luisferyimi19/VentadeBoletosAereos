@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8" />
-    <title>Reserva Tu Vuelo</title>
+    <title>Elije tu Vuelo</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
@@ -209,7 +209,10 @@
 
         body {
             margin: 0px !important;
-            height: 1000px;
+        }
+
+        html{
+            height: 650px;
         }
 
         label > input[type="radio"] {
@@ -367,6 +370,45 @@
             color: #f44336;
             padding-left: 90px;
         }
+
+        .headerinfo {
+            color: #f44336;
+            font-size: 72px;
+            font-family: Russo One;
+            text-align:center;
+            padding-left: 35%;
+        }
+
+        .botonvuelo {
+            font-family: 'Source Sans Pro';
+            font-size: 20px;
+            font-weight: bold;
+            width: 135px;
+            height: 50px;
+            background-color: #f44336;
+        }
+
+        .infovuelo {
+            font-family: 'Source Sans Pro';
+            font-size: 14px;
+            color: black;
+        }
+
+        .totalinfovuelo {
+            font-family: 'Source Sans Pro';
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .vuelo{
+            font-family: 'Source Sans Pro';
+            font-size: 18px;
+        }
+
+        .horavuelo {
+            font-family: 'Source Sans Pro';
+            font-size: 22px;
+        }
     </style>
 </head>
 <body>
@@ -382,7 +424,7 @@
                     </a>
                 </li>
                 <li id="menuop">
-                    <a href="~/Reserva_Vuelo/TravelOffer" style="position:relative; top: -11px;">
+                    <a href="~/Reserva_Vuelo/TravelOffer"style="position:relative; top:-11px;">
                         <i class="fa fa-tag"></i>
                         Oferta de Viajes
                     </a>
@@ -394,7 +436,7 @@
                     </a>
                 </li>
                 <li id="menuop">
-                    <a href="~/Reserva_Vuelo/Miles" style="color: #bdbdbd; position:relative; top:-11px;">
+                    <a href="~/Reserva_Vuelo/Miles" style="position:relative; top:-11px;">
                         <i class="fa fa-location-arrow"></i>
                         Millas
                     </a>
@@ -404,82 +446,121 @@
 
         <!--LOGO Y TITULO-->
         <div>
-            <a href="~/Reserva_Vuelo/Index"><img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
-            <header class="header">COVISKY</header></a>
+            <a href="~/Reserva_Vuelo/Index">
+                <img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
+                <header class="header">COVISKY</header>
+            </a>
             <span class="slogan">FLY SAFE, FLY NOW,  FLY WITH COVISKY</span>
         </div>
 
         <br />
     </div>
 
-    <!--OFERTA DE VIAJES-->
-    <div style=" margin: 10px; border: 2px solid;" class="oferta">
-        <header class="header2">Programa de Lealtad LifeMiles</header>
-        <!--Fila 1-->
-        <div>
-            <div class="card" style="width: 18rem; display: inline-block; background-image:url(../../Imagen/miles1.jpeg); height: 504px; margin-left: 9%;">
-                <div class="card-body">
-                </div>
+    <!--ELEGIR VIAJE-->
+    <div style=" margin-left: 25px; margin-right: 25px; border: 2px solid;">
+        <header class="header2" style="color:black;">Recuerde que puede comprar con sus Puntos/Millas + Dinero</header>
+        <div class="form-group" style="text-align:center;">
+            <div style="display:inline-block;">
+                <label>Programa de Lealtad</label><br />
+                <input type="text" id="ProgramaLealtad" name="ProgramaLealtad" value="PROGRAMA UMG" readonly="readonly"/>
             </div>
-            <div class="card" style="width: 18rem; display: inline-block; background-image:url(../../Imagen/miles2.jpeg); height: 504px; margin-left: 9%;">
-                <div class="card-body">
-                </div>
+
+            <div style="display:inline-block">
+                <label>Viaje Corto</label><br />
+                <input type="text" id="viajecorto" name="viajecorto"/>
             </div>
-            <div class="card" style="width: 16rem; display: inline-block; background-image:url(../../Imagen/miles3.jpeg); height: 504px; margin-left: 9%;">
-                <div class="card-body">
-                </div>
+
+            <div style="display:inline-block">
+                <label>Viaje Intermedio</label><br />
+                <input type="text" id="viajeintermedio" name="viajeintermedio"/>
             </div>
-            <br /><br />
-            <button type="button" class="btn btn-danger btn-lg" style="background-color:#f44336; margin:auto; display:block;">Conoce Más</button>
-            <br />
-        </div>
-        
-    </div>
-    <!--INFORMACION-->
-    <div>
-        <center>
-            <header class="header" style="text-align: center; ">Información</header>
-        </center>
-        <div style="border: 2px solid; margin: 2px;" class="imagen">
-            <article class="titulo_info">¿Quieres Viajar, pero no sabes si necesitas Visa? Descubrelo Aquí!</article>
-            <pre class="contenido_info">
-                En este artículo encontrarás todo lo relacionado con los requisitos de ingreso a todos los paises del mundo, entra y 
-                descubre si puedes ingresar sólo con tu pasaporte o si necesitas visa.
 
-                Encuentra todas las normativas necesarias para aplicar a una visa y así puedas encontrarte con tu destino!.
-            </pre>
-            <a  target="_blank"  href="https://necesito-visa-gt.web.app/" class="visa">PRESIONA AQUÍ PARA MÁS INFORMACIÓN</a>
+            <div style="display:inline-block">
+                <label>Viaje Largo</label><br />
+                <input type="text" id="viajelargo" name="viajelargo"/>
+            </div>
         </div>
-        <br />
-        <div style="border: 2px solid; margin: 2px;" class="imagen1">
-            <article class="titulo_info">¿Frío o Calor? ¿Relax o Rumba? ¡Descubre tu destino ideal!  </article>
-            <pre class="contenido_info">
-                Descubre cuál es tu destino perfecto llenando un facil cuestionario.
-
-                Quedarás encantado con los lugares que se ajustan a tus gustos y preferencias.
-
-                Después de conocer tu destino ideal, no podrás quedarte en casa!.
-            </pre>
-        </div>
-    </div>
-    <div>
-        <br />
-        <center>
-            <img src="~/Imagen/aeropuerto.jpg" style=" width:99%; height: 507px;" />
-        </center>
     </div>
     <br />
-    <!--CONTACTO-->
-    <div style="border: 2px solid; margin: 2px;" class="contacto">
-        <label class="contacto1">¿Necesitas ayuda personalizada?</label><br />
-        <label class="contacto2">Contactanos</label><br />
-        <pre class="contacto3">Comunicate de manera gratuita al
-        (+502) 5555-5555</pre>
-        <div style="text-align:center">
-            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook-square" id="social"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" id="social"></i></a>
-            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram" id="social"></i></a>
-            <a href="https://accounts.google.com/Login/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"><i class="fa fa-google-plus-square" id="social"></i></a>
+
+    <div style=" margin-left: 300px; margin-right: 300px; border: 2px solid; height:30%; padding:25px;">
+        <!--ELECCION VUELO IDA-->
+        <div>
+            <label class="vuelo">IDA:</label>
+            &nbsp;&nbsp;&nbsp;
+            <label id="origen" name="origen" class="vuelo">(Pais Origen)</label>
+            &nbsp;&nbsp;&nbsp;
+            <i class="fa fa-chevron-right"></i>
+            &nbsp;&nbsp;&nbsp;
+            <label id="destino" name="destino" class="vuelo">(Pais Destino)</label>
+        </div>
+
+        <div style="display:inline-block">
+            <label class="vuelo">SALE</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="vuelo">LLEGA</label>
+            <br />
+            <label class="horavuelo" id="horasale" name="horasale">06:00</label>
+            &nbsp;
+            <i class="fa fa-arrow-right"></i>
+            &nbsp;
+            <label class="horavuelo" id="horallega" name="horallega">06:50</label>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style="display:inline-block; text-align:center">
+            <label class="vuelo">CLASE ECONÓMICA</label><br />
+            <input type="button" id="economica" name="economica" value="$500" class="btn btn-info" />
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style="display:inline-block; text-align:center">
+            <label class="vuelo">CLASE EJECUTIVA</label><br />
+            <input type="button" id="ejecutiva" name="ejecutiva" value="$500" class="btn btn-success" />
+        </div>
+
+        <br /><br />
+
+        <!--ELECCION VUELO VUELTA-->
+        <div>
+            <label class="vuelo">VUELTA:</label>
+            &nbsp;&nbsp;&nbsp;
+            <label id="origen" name="origen" class="vuelo">(Pais Destino)</label>
+            &nbsp;&nbsp;&nbsp;
+            <i class="fa fa-chevron-right"></i>
+            &nbsp;&nbsp;&nbsp;
+            <label id="destino" name="destino" class="vuelo">(Pasi Origen)</label>
+        </div>
+
+        <div style="display:inline-block">
+            <label class="vuelo">SALE</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="vuelo">LLEGA</label>
+            <br />
+            <label class="horavuelo">06:00</label>
+            &nbsp;
+            <i class="fa fa-arrow-right"></i>
+            &nbsp;
+            <label class="horavuelo">06:50</label>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style="display:inline-block; text-align:center">
+            <label class="vuelo">CLASE ECONÓMICA</label><br />
+            <input type="button" id="economica" name="economica" value="$500" class="btn btn-info" />
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style="display:inline-block; text-align:center">
+            <label class="vuelo">CLASE EJECUTIVA</label><br />
+            <input type="button" id="ejecutiva" name="ejecutiva" value="$500" class="btn btn-success" />
+        </div>
+
+        <!--COSTO TOTAL-->
+        <div style="float:right; position:relative; top:-185px; padding-right:20px; text-align:center">
+            <label class="infovuelo">VALOR TOTAL:</label><br />
+            <label class="totalinfovuelo">USD 0.00</label><br />
+            <label class="infovuelo">Tarifa Base: 0.0</label><br />
+            <label class="infovuelo">Impuestos: 0.0</label><br />
+            <label class="infovuelo">Cargos: 0.0</label><br />
+            <a href="~/Reserva_Vuelo/Information"><input type="button" id="ejecutiva" name="ejecutiva" value="SOLICITAR" class="botonvuelo" /></a><br />
+            <label class="infovuelo">Incluye Cargos e Impuestos</label><br />
         </div>
     </div>
 

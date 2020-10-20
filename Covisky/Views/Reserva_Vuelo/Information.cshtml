@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8" />
-    <title>Reserva Tu Vuelo</title>
+    <title>Información</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
@@ -209,7 +209,7 @@
 
         body {
             margin: 0px !important;
-            height: 1000px;
+            height: 850px;
         }
 
         label > input[type="radio"] {
@@ -367,6 +367,78 @@
             color: #f44336;
             padding-left: 90px;
         }
+
+        .headerinfo {
+            color: #f44336;
+            font-size: 72px;
+            font-family: Russo One;
+            text-align: center;
+            padding-left: 35%;
+        }
+
+        .botonvuelo {
+            font-family: 'Source Sans Pro';
+            font-size: 20px;
+            font-weight: bold;
+            width: 135px;
+            height: 50px;
+            background-color: #f44336;
+        }
+
+        .infovuelo {
+            font-family: 'Source Sans Pro';
+            font-size: 14px;
+            color: black;
+        }
+
+        .totalinfovuelo {
+            font-family: 'Source Sans Pro';
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .vuelo {
+            font-family: 'Source Sans Pro';
+            font-size: 18px;
+        }
+
+        .horavuelo {
+            font-family: 'Source Sans Pro';
+            font-size: 22px;
+        }
+        .headerpasajero {
+            color: #f44336;
+            font-size: 26px;
+            font-family: Russo One;
+            padding-left: 68px;
+            color: black;
+        }
+        .titulo {
+            color: #f44336;
+            font-size: 20px;
+            font-family: 'Source Sans Pro';
+            padding-left: 20px;
+            font-weight: bold;
+            color: black;
+        }
+        .personal{
+            font-family: 'Source Sans Pro';
+            font-size: 16px;
+        }
+        .texto{
+            width: 400px;
+        }
+        .btncontinuar {
+            font-family: 'Source Sans Pro';
+            font-size: 20px;
+            font-weight: bold;
+            width: 135px;
+            height: 50px;
+            background-color: #f44336;
+            float: right;
+            position: relative;
+            right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -382,7 +454,7 @@
                     </a>
                 </li>
                 <li id="menuop">
-                    <a href="~/Reserva_Vuelo/TravelOffer" style="position:relative; top: -11px;">
+                    <a href="~/Reserva_Vuelo/TravelOffer" style="position:relative; top:-11px;">
                         <i class="fa fa-tag"></i>
                         Oferta de Viajes
                     </a>
@@ -394,7 +466,7 @@
                     </a>
                 </li>
                 <li id="menuop">
-                    <a href="~/Reserva_Vuelo/Miles" style="color: #bdbdbd; position:relative; top:-11px;">
+                    <a href="~/Reserva_Vuelo/Miles" style="position:relative; top:-11px;">
                         <i class="fa fa-location-arrow"></i>
                         Millas
                     </a>
@@ -404,82 +476,77 @@
 
         <!--LOGO Y TITULO-->
         <div>
-            <a href="~/Reserva_Vuelo/Index"><img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
-            <header class="header">COVISKY</header></a>
+            <a href="~/Reserva_Vuelo/Index">
+                <img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
+                <header class="header">COVISKY</header>
+            </a>
             <span class="slogan">FLY SAFE, FLY NOW,  FLY WITH COVISKY</span>
         </div>
 
         <br />
     </div>
 
-    <!--OFERTA DE VIAJES-->
-    <div style=" margin: 10px; border: 2px solid;" class="oferta">
-        <header class="header2">Programa de Lealtad LifeMiles</header>
-        <!--Fila 1-->
-        <div>
-            <div class="card" style="width: 18rem; display: inline-block; background-image:url(../../Imagen/miles1.jpeg); height: 504px; margin-left: 9%;">
-                <div class="card-body">
-                </div>
-            </div>
-            <div class="card" style="width: 18rem; display: inline-block; background-image:url(../../Imagen/miles2.jpeg); height: 504px; margin-left: 9%;">
-                <div class="card-body">
-                </div>
-            </div>
-            <div class="card" style="width: 16rem; display: inline-block; background-image:url(../../Imagen/miles3.jpeg); height: 504px; margin-left: 9%;">
-                <div class="card-body">
-                </div>
-            </div>
-            <br /><br />
-            <button type="button" class="btn btn-danger btn-lg" style="background-color:#f44336; margin:auto; display:block;">Conoce Más</button>
-            <br />
-        </div>
-        
-    </div>
-    <!--INFORMACION-->
-    <div>
-        <center>
-            <header class="header" style="text-align: center; ">Información</header>
-        </center>
-        <div style="border: 2px solid; margin: 2px;" class="imagen">
-            <article class="titulo_info">¿Quieres Viajar, pero no sabes si necesitas Visa? Descubrelo Aquí!</article>
-            <pre class="contenido_info">
-                En este artículo encontrarás todo lo relacionado con los requisitos de ingreso a todos los paises del mundo, entra y 
-                descubre si puedes ingresar sólo con tu pasaporte o si necesitas visa.
-
-                Encuentra todas las normativas necesarias para aplicar a una visa y así puedas encontrarte con tu destino!.
-            </pre>
-            <a  target="_blank"  href="https://necesito-visa-gt.web.app/" class="visa">PRESIONA AQUÍ PARA MÁS INFORMACIÓN</a>
-        </div>
-        <br />
-        <div style="border: 2px solid; margin: 2px;" class="imagen1">
-            <article class="titulo_info">¿Frío o Calor? ¿Relax o Rumba? ¡Descubre tu destino ideal!  </article>
-            <pre class="contenido_info">
-                Descubre cuál es tu destino perfecto llenando un facil cuestionario.
-
-                Quedarás encantado con los lugares que se ajustan a tus gustos y preferencias.
-
-                Después de conocer tu destino ideal, no podrás quedarte en casa!.
-            </pre>
-        </div>
+    <!--TITULO INFORMACION-->
+    <div >
+        <header class="headerpasajero">Información Del Pasajero</header>
+        <pre style="text-align:center; font-family:'Source Sans Pro'; font-size: 18px">Ingresa el primer nombre y el primer apellido tal y como aparecen en el pasaporte o documento de identidad de los pasajeros. También, ingrese su correo electrónico y 
+número de teléfono para poder contactarle si hubiera alguna información nueva que proporcionarle.</pre>
     </div>
     <div>
+        <!--INFO PERSONAL-->
+        <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height: 140px">
+            <header class="titulo" style="background-color: white">Pasajero</header>
+            <div>
+                <label class="personal" style="font-weight: bold; padding-left: 20px;">Información Personal</label>
+                <br />
+                <div style="display:inline-block; padding-left: 20px">
+                    <label>Apellido(s):*</label><br />
+                    <input required type="text" id="apellido" name="apellido" placeholder="Ingrese Su Apellido(s)" class="texto" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="display:inline-block">
+                    <label>Nombre(s):*</label><br />
+                    <input required type="text" id="nombre" name="nombre" placeholder="Ingrese Su Nombre(s)" class="texto" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="display:inline-block">
+                    <label>Fecha de Nacimiento:*</label><br />
+                    <input required type="date" id="fechanac" name="fechanac" class="texto" />
+                </div>
+            </div>
+        </div>
         <br />
-        <center>
-            <img src="~/Imagen/aeropuerto.jpg" style=" width:99%; height: 507px;" />
-        </center>
-    </div>
-    <br />
-    <!--CONTACTO-->
-    <div style="border: 2px solid; margin: 2px;" class="contacto">
-        <label class="contacto1">¿Necesitas ayuda personalizada?</label><br />
-        <label class="contacto2">Contactanos</label><br />
-        <pre class="contacto3">Comunicate de manera gratuita al
-        (+502) 5555-5555</pre>
-        <div style="text-align:center">
-            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook-square" id="social"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" id="social"></i></a>
-            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram" id="social"></i></a>
-            <a href="https://accounts.google.com/Login/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"><i class="fa fa-google-plus-square" id="social"></i></a>
+        <!--INFO CONTACTO-->
+        <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height: 110px">
+            <header class="titulo" style="background-color: white; color: #f44336">Información Sobre Contactos</header>
+            <div>
+                <div style="display:inline-block; padding-left: 20px">
+                    <label>Correo Electrónico:*</label><br />
+                    <input required type="text" id="correo" name="correo" placeholder="Ingrese Su Apellido(s)" class="texto" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="display:inline-block">
+                    <label>Confirme Su Correo Electrónico:*</label><br />
+                    <input required type="text" id="confirmarcorreo" name="confirmarcorreo" placeholder="Ingrese Su Nombre(s)" class="texto" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="display:inline-block">
+                    <label>Teléfono:*</label><br />
+                    <input required type="tel" id="telefono" name="telefono" placeholder="Ingrese Su Número de Teléfono" class="texto" />
+                </div>
+            </div>
+        </div>
+        <br />
+        <!--ACEPTACION-->
+        <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height:220px">
+            <header class="titulo" style="background-color: white;">Aceptación de términos y condiciones</header>
+            <div>
+                <label style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;">Por favor acepta para poder continuar con tu compra.</label><br />
+                <pre style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;"><input required type="checkbox" id="leido" name="leido" value="Leido" />&nbsp;&nbsp;&nbsp;He leído y acepto el contrato de transporte, la Política General de Privacidad de clientes, viajeros y usuarios y las condiciones de manejo de mercancías peligrosas, la política de cancelación y 
+   penalidades por cambio, el cobro de impuestos y cargos gubernamentales no incluidos en el valor del servicio, así como aquellos incluidos y las condiciones de acceso uso de este sitio web.*</pre>
+                <label style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;"><input required type="checkbox" id="acepto" name="acepto" value="Acepto" />&nbsp;&nbsp;&nbsp;Acepto el uso de mis datos personales para recibir promociones, ofertas y novedades que COVISKY tiene para mí</label><br />
+                <input type="button" id="btninfo" name="btninfo" value="CONTINUAR" class="btncontinuar" /><br />
+            </div>
         </div>
     </div>
 
