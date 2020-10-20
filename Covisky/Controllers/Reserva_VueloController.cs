@@ -34,5 +34,15 @@ namespace Covisky.Controllers
         {
             return View();
         }
+
+        public ActionResult FlyStatus()
+        {
+            return View();
+        }
+
+        public ActionResult PickASit()
+        {
+            return View();
+        }
     }
 }
