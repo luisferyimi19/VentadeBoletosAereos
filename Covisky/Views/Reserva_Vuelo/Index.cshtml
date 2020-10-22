@@ -137,7 +137,7 @@
 
         .info3 {
             font-weight: normal;
-            padding-left: 140px;
+            padding-left: 180px;
             font-size: 20px;
         }
 
@@ -409,14 +409,14 @@
 
                                 <br /><br />
 
-                                <input type="text" id="Origen" name="Origen" class="info4" />
-                                <input type="text" id="Destino" name="Destino" class="info4" />
-                                <input type="date" id="Sales" name="Sales" class="info5" />
-                                <input type="date" id="Regresas" name="Regresas" class="info5" />
+                                <input required type="text" id="Origen" name="Origen" class="info4" />
+                                <input required type="text" id="Destino" name="Destino" class="info4" />
+                                <input required type="date" id="Sales" name="Sales" class="info5" min="2020-10-23"/>
+                                <input required type="date" id="Regresas" name="Regresas" class="info5" min="2020-10-23"/>
                                 <ul style="float: right">
-                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" /></li>
-                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" /></li>
-                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" /></li>
+                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+"/></li>
+                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+"/></li>
+                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+"/></li>
                                     <ul style="float: right">
                                         <li class="clase2">
                                             <input type="radio" id="Economica" name="class" value="Economica" checked/>
@@ -449,13 +449,13 @@
 
                                 <br /><br />
 
-                                <input type="text" id="Origen" name="Origen" class="info4" />
-                                <input type="text" id="Destino" name="Destino" class="info4" />
-                                <input type="date" id="Sales" name="Sales" class="info7" />
+                                <input type="text" id="Origen" name="Origen" class="info4" required/>
+                                <input type="text" id="Destino" name="Destino" class="info4" required/>
+                                <input type="date" id="Sales" name="Sales" class="info7" required/>
                                 <ul style="float: right">
-                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" /></li>
-                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" /></li>
-                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" /></li>
+                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+"/></li>
+                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+"/></li>
+                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+"/></li>
                                     <ul style="float: right">
                                         <li class="clase2">
                                             <input type="radio" id="Economica" name="class1" value="Economica" checked />
@@ -489,16 +489,16 @@
 
                                 <br />
                                 <h4 style="position: absolute; left: 5%;">1</h4>
-                                <input type="text" id="Origen" name="Origen" class="info4" />
-                                <input type="text" id="Destino" name="Destino" class="info4" />
-                                <input type="date" id="Sales" name="Sales" class="info5" />
-                                <input type="date" id="Regresas" name="Regresas" class="info5" />
+                                <input type="text" id="Origen" name="Origen" class="info4" required/>
+                                <input type="text" id="Destino" name="Destino" class="info4" required/>
+                                <input type="date" id="Sales" name="Sales" class="info5" required/>
+                                <input type="date" id="Regresas" name="Regresas" class="info5" required/>
                                 <br />
 
                                 <ul style="float: right">
-                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" /></li>
-                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" /></li>
-                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" /></li>
+                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+"/></li>
+                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+"/></li>
+                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+"/></li>
                                     <ul style="float: right">
                                         <li class="clase2">
                                             <input type="radio" id="Economica" name="class" value="Economica" checked />
@@ -512,10 +512,10 @@
                                     </ul>
                                 </ul>
                                 <h4 style="position: absolute; left: 5%;">2</h4>
-                                <input type="text" id="Origen" name="Origen" class="info4" />
-                                <input type="text" id="Destino" name="Destino" class="info4" />
-                                <input type="date" id="Sales" name="Sales" class="info5" />
-                                <input type="date" id="Regresas" name="Regresas" class="info5" />
+                                <input type="text" id="Origen" name="Origen" class="info4" required/>
+                                <input type="text" id="Destino" name="Destino" class="info4" required/>
+                                <input type="date" id="Sales" name="Sales" class="info5" required/>
+                                <input type="date" id="Regresas" name="Regresas" class="info5" required/>
                             </div>
                             <div>
                                 <a href="~/Reserva_Vuelo/SelectTravel"><input type="button" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" /></a>
@@ -549,7 +549,7 @@
                     </div>
                 </center>
                 <br /><br /><br />
-                <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 24px;background-color:#f44336">Continuar</button>
+                <a href="~/Reserva_Vuelo/Checkin2"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 24px;background-color:#f44336">Continuar</button></a>
             </div>
 
             <!--Vista de Check-In-->
@@ -595,7 +595,7 @@
                                     </form>
                                 </div>
                             </center>
-                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button>
+                            <a href="~/Reserva_Vuelo/PickASit"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button></a>
                         </div>
                         <div class="tabPanelCheck">
                             <center>
@@ -616,7 +616,7 @@
                                     </form>
                                 </div>
                             </center>
-                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button>
+                            <a href="~/Reserva_Vuelo/PickASit"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button></a>
                         </div>
 
                     </div>
@@ -671,7 +671,7 @@
                                     </form>
                                 </div>
                             </center>
-                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button>
+                            <a href="~/Reserva_Vuelo/FlyStatus"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button></a>
                         </div>
                         <div class="tabPanelFly">
                             <center>
@@ -692,7 +692,7 @@
                                     </form>
                                 </div>
                             </center>
-                            <button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button>
+                            <a href="~/Reserva_Vuelo/FlyStatus"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button></a>
                         </div>
 
                     </div>
