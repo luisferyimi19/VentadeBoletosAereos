@@ -393,164 +393,172 @@
                                 </label>
                             </ul>
                         </div>
-                        <div class="tabPanelReserve">
-                            <div>
-                                <!--RESERVA TU VUELO / IDA Y VUELTA-->
+                        <form action="~/Reserva_Vuelo/SelectTravel" method="post">
+                            <div class="tabPanelReserve">
                                 <div>
-                                    <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
-                                    <label class="info">En Que Fechas Deseas Viajar     <i class="fa fa-calendar"></i></label>
-                                    <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
-                                </div>
+                                    <!--RESERVA TU VUELO / IDA Y VUELTA-->
+                                    <div>
+                                        <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
+                                        <label class="info">En Que Fechas Deseas Viajar     <i class="fa fa-calendar"></i></label>
+                                        <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
+                                    </div>
 
-                                <label class="info2">Desde</label>
-                                <label class="info2">Hasta</label>
-                                <label class="info3">Sales</label>
-                                <label class="info3">Regresas</label>
+                                    <label class="info2">Desde</label>
+                                    <label class="info2">Hasta</label>
+                                    <label class="info3">Sales</label>
+                                    <label class="info3">Regresas</label>
 
-                                <br /><br />
+                                    <br /><br />
 
-                                <input required type="text" id="Origen" name="Origen" class="info4" />
-                                <input required type="text" id="Destino" name="Destino" class="info4" />
-                                <input required type="date" id="Sales" name="Sales" class="info5" min="2020-10-23"/>
-                                <input required type="date" id="Regresas" name="Regresas" class="info5" min="2020-10-23"/>
-                                <ul style="float: right">
-                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+"/></li>
-                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+"/></li>
-                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+"/></li>
+                                    <input required type="text" id="Origen" name="Origen" class="info4" />
+                                    <input required type="text" id="Destino" name="Destino" class="info4" />
+                                    <input required type="date" id="Sales" name="Sales" class="info5" min="2020-10-25" />
+                                    <input required type="date" id="Regresas" name="Regresas" class="info5" min="2020-10-26" />
                                     <ul style="float: right">
-                                        <li class="clase2">
-                                            <input type="radio" id="Economica" name="class" value="Economica" checked/>
-                                            <label>Económica</label>
-                                        </li>
-                                        <br />
-                                        <li class="clase2">
-                                            <input type="radio" id="Ejecutivo" name="class" value="Ejecutivo" />
-                                            <label>Ejecutivo</label>
-                                        </li>
+                                        <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+" /></li>
+                                        <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+" /></li>
+                                        <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+" /></li>
+                                        <ul style="float: right">
+                                            <li class="clase2">
+                                                <input type="radio" id="Economica" name="class" value="Economica" checked />
+                                                <label>Económica</label>
+                                            </li>
+                                            <br />
+                                            <li class="clase2">
+                                                <input type="radio" id="Ejecutivo" name="class" value="Ejecutivo" />
+                                                <label>Ejecutivo</label>
+                                            </li>
+                                        </ul>
                                     </ul>
-                                </ul>
-                            </div>
-                            <div>
-                                <a href="~/Reserva_Vuelo/SelectTravel"><input type="button" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" /></a>
-                            </div>
-                        </div>
-                        <div class="tabPanelReserve">
-                            <div>
-                                <!--SOLO IDA-->
+                                </div>
                                 <div>
-                                    <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
-                                    <label class="info">En Que Fecha Deseas Viajar     <i class="fa fa-calendar"></i></label>
-                                    <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
+                                    <input type="submit" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" />
                                 </div>
-
-                                <label class="info2">Desde</label>
-                                <label class="info2">Hasta</label>
-                                <label class="info6">Fecha de ida</label>
-
-                                <br /><br />
-
-                                <input type="text" id="Origen" name="Origen" class="info4" required/>
-                                <input type="text" id="Destino" name="Destino" class="info4" required/>
-                                <input type="date" id="Sales" name="Sales" class="info7" required/>
-                                <ul style="float: right">
-                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+"/></li>
-                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+"/></li>
-                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+"/></li>
-                                    <ul style="float: right">
-                                        <li class="clase2">
-                                            <input type="radio" id="Economica" name="class1" value="Economica" checked />
-                                            <label>Económica</label>
-                                        </li>
-                                        <br />
-                                        <li class="clase2">
-                                            <input type="radio" id="Ejecutivo" name="class1" value="Ejecutivo" />
-                                            <label>Ejecutivo</label>
-                                        </li>
-                                    </ul>
-                                </ul>
                             </div>
-                            <div>
-                                <a href="~/Reserva_Vuelo/SelectTravel"><input type="button" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" /></a>
-                            </div>
-                        </div>
-                        <div class="tabPanelReserve">
-                            <div>
-                                <!--MULTIDESTINO-->
+                        </form>
+                        <form action="~/Reserva_Vuelo/SelectTravel" method="post">
+                            <div class="tabPanelReserve">
                                 <div>
-                                    <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
-                                    <label class="info">En Que Fechas Deseas Viajar     <i class="fa fa-calendar"></i></label>
-                                    <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
-                                </div>
+                                    <!--SOLO IDA-->
+                                    <div>
+                                        <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
+                                        <label class="info">En Que Fecha Deseas Viajar     <i class="fa fa-calendar"></i></label>
+                                        <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
+                                    </div>
 
-                                <label class="info2">Desde</label>
-                                <label class="info2">Hasta</label>
-                                <label class="info3">Sales</label>
-                                <label class="info3">Regresas</label>
+                                    <label class="info2">Desde</label>
+                                    <label class="info2">Hasta</label>
+                                    <label class="info6">Fecha de ida</label>
 
-                                <br />
-                                <h4 style="position: absolute; left: 5%;">1</h4>
-                                <input type="text" id="Origen" name="Origen" class="info4" required/>
-                                <input type="text" id="Destino" name="Destino" class="info4" required/>
-                                <input type="date" id="Sales" name="Sales" class="info5" required/>
-                                <input type="date" id="Regresas" name="Regresas" class="info5" required/>
-                                <br />
+                                    <br /><br />
 
-                                <ul style="float: right">
-                                    <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+"/></li>
-                                    <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+"/></li>
-                                    <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+"/></li>
+                                    <input required type="text" id="Origen" name="Origen" class="info4" />
+                                    <input type="text" id="Destino" name="Destino" class="info4" required />
+                                    <input type="date" id="Sales" name="Sales" class="info7" required min="2020-10-25" />
                                     <ul style="float: right">
-                                        <li class="clase2">
-                                            <input type="radio" id="Economica" name="class" value="Economica" checked />
-                                            <label>Económica</label>
-                                        </li>
-                                        <br />
-                                        <li class="clase2">
-                                            <input type="radio" id="Ejecutivo" name="class" value="Ejecutivo" />
-                                            <label>Ejecutivo</label>
-                                        </li>
+                                        <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+" /></li>
+                                        <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+" /></li>
+                                        <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+" /></li>
+                                        <ul style="float: right">
+                                            <li class="clase2">
+                                                <input type="radio" id="Economica" name="class1" value="Economica" checked />
+                                                <label>Económica</label>
+                                            </li>
+                                            <br />
+                                            <li class="clase2">
+                                                <input type="radio" id="Ejecutivo" name="class1" value="Ejecutivo" />
+                                                <label>Ejecutivo</label>
+                                            </li>
+                                        </ul>
                                     </ul>
-                                </ul>
-                                <h4 style="position: absolute; left: 5%;">2</h4>
-                                <input type="text" id="Origen" name="Origen" class="info4" required/>
-                                <input type="text" id="Destino" name="Destino" class="info4" required/>
-                                <input type="date" id="Sales" name="Sales" class="info5" required/>
-                                <input type="date" id="Regresas" name="Regresas" class="info5" required/>
+                                </div>
+                                <div>
+                                    <input type="submit" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" />
+                                </div>
                             </div>
-                            <div>
-                                <a href="~/Reserva_Vuelo/SelectTravel"><input type="button" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" /></a>
+                        </form>
+                        <form action="~/Reserva_Vuelo/SelectTravel" method="post">
+                            <div class="tabPanelReserve">
+                                <div>
+                                    <!--MULTIDESTINO-->
+                                    <div>
+                                        <label class="info">Selecciona Tu Origen y Destino     <i class="fa fa-plane"></i></label>
+                                        <label class="info">En Que Fechas Deseas Viajar     <i class="fa fa-calendar"></i></label>
+                                        <label class="info">Como Viajas     <i class="fa fa-users"></i></label>
+                                    </div>
+
+                                    <label class="info2">Desde</label>
+                                    <label class="info2">Hasta</label>
+                                    <label class="info3">Sales</label>
+                                    <label class="info3">Regresas</label>
+
+                                    <br />
+                                    <h4 style="position: absolute; left: 5%;">1</h4>
+                                    <input type="text" id="Origen" name="Origen" class="info4" required />
+                                    <input type="text" id="Destino" name="Destino" class="info4" required />
+                                    <input type="date" id="Sales" name="Sales" class="info5" required min="2020-10-25" />
+                                    <input type="date" id="Regresas" name="Regresas" class="info5" required min="2020-10-28" />
+                                    <br />
+
+                                    <ul style="float: right">
+                                        <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+" /></li>
+                                        <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+" /></li>
+                                        <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+" /></li>
+                                        <ul style="float: right">
+                                            <li class="clase2">
+                                                <input type="radio" id="Economica" name="class" value="Economica" checked />
+                                                <label>Económica</label>
+                                            </li>
+                                            <br />
+                                            <li class="clase2">
+                                                <input type="radio" id="Ejecutivo" name="class" value="Ejecutivo" />
+                                                <label>Ejecutivo</label>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <h4 style="position: absolute; left: 5%;">2</h4>
+                                    <input type="text" id="Origen" name="Origen" class="info4" required />
+                                    <input type="text" id="Destino" name="Destino" class="info4" required />
+                                    <input type="date" id="Sales" name="Sales" class="info5" required min="2020-10-25" />
+                                    <input type="date" id="Regresas" name="Regresas" class="info5" required min="2020-10-28" />
+                                </div>
+                                <div>
+                                    <input type="submit" id="Buscar" name="Buscar" value="Buscar Vuelo" class="boton" />
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
 
             <!--Vista de Mis Viajes-->
+            
             <div class="tabPanel">
-                <center>
-                    <br />
-                    <span>En este apartado puede modificar su itinerario de vuelo hasta 2 horas antes del mismo</span>
-                    <br /><br />
-                    <div>
-                        <form>
+                <form action="~/Reserva_Vuelo/Checkin2" method="post">
+                    <center>
+                        <br />
+                        <span>En este apartado puede modificar su itinerario de vuelo hasta 2 horas antes del mismo</span>
+                        <br /><br />
+                        <div>
                             <div class="form-row">
                                 <div class="col">
                                     <span>Ingresa tu número de reserva</span>
                                     <i class="fa fa-hashtag"></i>
-                                    <input type="text" class="form-control" style="max-width:60%">
+                                    <input type="text" class="form-control" style="max-width:60%" required>
                                 </div>
                                 <div class="col">
                                     <span>Ingresa el apellido del pasajero</span>
                                     <i class="fa fa-user"></i>
-                                    <input type="text" class="form-control" style="max-width:60%" />
+                                    <input type="text" class="form-control" style="max-width:60%" required />
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                </center>
-                <br /><br /><br />
-                <a href="~/Reserva_Vuelo/Checkin2"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 24px;background-color:#f44336">Continuar</button></a>
+                        </div>
+                    </center>
+                    <br /><br /><br />
+                    <input type="submit" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 24px;background-color:#f44336" value="Continuar" />
+                </form>
             </div>
+            
 
             <!--Vista de Check-In-->
             <div class="tabPanel">
@@ -572,53 +580,55 @@
                                         <input name="radio-button" type="radio" onclick="showPanelCheck(1,'rgba(0, 0, 0, 0)')" />
                                         <span>Número de viajero frecuente</span>
                                     </label>
-
                                 </li>
                             </ul>
                         </div>
-                        <div class="tabPanelCheck">
-                            <center>
-                                <div>
-                                    <form>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <span>Ingresa tu código de reserva</span>
-                                                <i class="fa fa-hashtag"></i>
-                                                <input type="text" class="form-control" style="max-width:60%">
+                        <form action="~/Reserva_Vuelo/PickASit" method="post">
+                            <div class="tabPanelCheck">
+                                <center>
+                                    <div>
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <span>Ingresa tu código de reserva</span>
+                                                    <i class="fa fa-hashtag"></i>
+                                                    <input type="text" class="form-control" style="max-width:60%" required />
+                                                </div>
+                                                <div class="col">
+                                                    <span>Ingresa la fecha de salida del vuelo</span>
+                                                    <i class="fa fa-calendar"></i>
+                                                    <input type="date" class="form-control" style="max-width:60%" required min="2020-10-25" />
+                                                </div>
                                             </div>
-                                            <div class="col">
-                                                <span>Ingresa la fecha de salida del vuelo</span>
-                                                <i class="fa fa-calendar"></i>
-                                                <input type="date" class="form-control" style="max-width:60%" />
+                                        </form>
+                                    </div>
+                                </center>
+                                <button type="submit" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button>
+                            </div>
+                        </form>
+                        <form action="~/Reserva_Vuelo/PickASit" method="post">
+                            <div class="tabPanelCheck">
+                                <center>
+                                    <div>
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <span>Ingresa tu número de viajero frecuente</span>
+                                                    <i class="fa fa-hashtag"></i>
+                                                    <input type="text" class="form-control" style="max-width:60%" required />
+                                                </div>
+                                                <div class="col">
+                                                    <span>Ingresa la fecha de salida del vuelo</span>
+                                                    <i class="fa fa-calendar"></i>
+                                                    <input type="date" class="form-control" style="max-width:60%" required min="2020-10-25" />
+                                                </div>
                                             </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </center>
-                            <a href="~/Reserva_Vuelo/PickASit"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button></a>
-                        </div>
-                        <div class="tabPanelCheck">
-                            <center>
-                                <div>
-                                    <form>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <span>Ingresa tu número de viajero frecuente</span>
-                                                <i class="fa fa-hashtag"></i>
-                                                <input type="text" class="form-control" style="max-width:60%">
-                                            </div>
-                                            <div class="col">
-                                                <span>Ingresa la fecha de salida del vuelo</span>
-                                                <i class="fa fa-calendar"></i>
-                                                <input type="date" class="form-control" style="max-width:60%" />
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </center>
-                            <a href="~/Reserva_Vuelo/PickASit"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button></a>
-                        </div>
-
+                                        </form>
+                                    </div>
+                                </center>
+                                <button type="submit" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -635,7 +645,7 @@
                                 <li>
                                     <label>
                                         <input name="radio-button-fly" type="radio" onclick="showPanelFly(0,'rgba(0, 0, 0, 0)')" checked />
-                                        <span>Ruta</span>
+                                        <spa>Ruta</spa>
                                     </label>
                                 </li>
                                 <li>
@@ -643,58 +653,56 @@
                                         <input name="radio-button-fly" type="radio" onclick="showPanelFly(1,'rgba(0, 0, 0, 0)')" />
                                         <span>Número de vuelo</span>
                                     </label>
-
                                 </li>
                             </ul>
                         </div>
-                        <div class="tabPanelFly">
-                            <center>
-                                <div>
-                                    <form>
+                        <form action="~/Reserva_Vuelo/FlyStatus" method="post">
+                            <div class="tabPanelFly">
+                                <center>
+                                    <div>
                                         <div class="form-row">
                                             <div class="col">
                                                 <span>Origen</span>
                                                 <i class="fa fa-plane"></i>
-                                                <input type="text" class="form-control" style="max-width:60%">
+                                                <input type="text" class="form-control" style="max-width:60%" required />
                                             </div>
                                             <div class="col">
                                                 <span>Destino</span>
                                                 <i class="fa fa-plane"></i>
-                                                <input type="text" class="form-control" style="max-width:60%">
+                                                <input type="text" class="form-control" style="max-width:60%" required />
                                             </div>
                                             <div class="col">
                                                 <span>Ingresa la fecha de tu vuelo</span>
                                                 <i class="fa fa-calendar"></i>
-                                                <input type="date" class="form-control" style="max-width:60%" />
+                                                <input type="date" class="form-control" style="max-width:60%" required min="2020-10-25" />
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                            </center>
-                            <a href="~/Reserva_Vuelo/FlyStatus"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button></a>
-                        </div>
-                        <div class="tabPanelFly">
-                            <center>
-                                <div>
-                                    <form>
+                                    </div>
+                                </center>
+                                <button type="submit" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px; background-color:#f44336">Continuar</button></a>
+                            </div>
+                        </form>
+                        <form action="~/Reserva_Vuelo/FlyStatus" method="post">
+                            <div class="tabPanelFly">
+                                <center>
+                                    <div>
                                         <div class="form-row">
                                             <div class="col">
                                                 <span>Número de vuelo</span>
                                                 <i class="fa fa-hashtag"></i>
-                                                <input type="text" class="form-control" style="max-width:60%">
+                                                <input type="text" class="form-control" style="max-width:60%" required />
                                             </div>
                                             <div class="col">
                                                 <span>Ingresa la fecha de tu vuelo</span>
                                                 <i class="fa fa-calendar"></i>
-                                                <input type="date" class="form-control" style="max-width:60%" />
+                                                <input type="date" class="form-control" style="max-width:60%" required min="2020-10-25" />
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                            </center>
-                            <a href="~/Reserva_Vuelo/FlyStatus"><button type="button" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button></a>
-                        </div>
-
+                                    </div>
+                                </center>
+                                <button type="submit" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 15px;background-color:#f44336">Continuar</button></a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -753,5 +761,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>
