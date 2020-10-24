@@ -210,8 +210,8 @@
             width: 135px;
             height: 50px;
             background-color: #f44336;
-            position: absolute;
-            right: 28px;
+            position: relative;
+            left: 330px;
             margin-top: 46px;
             border: none;
             border-radius: 6px;
@@ -219,7 +219,7 @@
 
         body {
             margin: 0px !important;
-            height: 1000px;
+            height: 800px;
         }
 
         label > input[type="radio"] {
@@ -364,13 +364,13 @@
             <a href="#" style="color:#ff000000"><header class="header">COVISKY</header></a>
             <span class="slogan">FLY SAFE, FLY NOW,  FLY WITH COVISKY</span>
         </div>
-       <b><HR/></b>
+        <b><HR/></b>
         <br />
         <!---PAGO-->
         <div style=" margin: 30px; border: 2px solid ;  border: black 2px solid; background-color: #C0C0C0">
-             <form>
+             <form action="~/Reserva_Vuelo/Index" method="post">
                 <div class="form-check">
-                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" required>
                     <label class="form-check-label" for="exampleRadios2">
                            Tarjeta de crédito o débito
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card-2-back" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -387,127 +387,80 @@
                 <div class="form-row">
                     <br />
                     <div class="form-group col-md-3">
-                        <input type="tarjeta" class="form-control" placeholder="Número de tarjeta" id="inputtarjeta">
+                        <input type="text" class="form-control" placeholder="Número de tarjeta" id="inputtarjeta" name="inputtarjeta" required pattern="^[0-9]+">
                         <label for="inputEmail4">Escribir el número de la trajeta de crédito</label>
                     </div>
                     <div class="form-group col-md-3">
-                        <input type="fecha_expir" class="form-control" placeholder="Fecha de expiración" id="inputfecha">
+                        <input type="text" class="form-control" placeholder="Fecha de expiración" id="inputfecha" name="inputfecha" required>
                         <label for="inputPassword4">MM/AA</label>
                     </div>
                     <div class="form-group col-md-2">
-                        <input type="cod_segur" class="form-control" placeholder="CVV" id="inputcodigo_seg">
+                        <input type="text" class="form-control" placeholder="CVV" id="inputcodigo_seg" name="inputcodigo_seg" required pattern="^[0-9]+">
                         <label for="inputPassword4">Ingrese codigo de seguridad</label>
                     </div>
                 </div>
                 <div class="form-group col-md-3">
-                    <select id="inputState" class="form-control">
-                        <label for="inputState">Lugar de Emisión de la tarjeta</label>
-                        <option selected>País...</option>
-                        <option>...</option>
+                    <select id="inputState" class="form-control" required>
+                        <option value="">Seleccione Un Pais</option>
+                        <option>Guatemala</option>
+                        <option>España</option>
                     </select>
+                    <label for="inputState">Lugar de Emisión de la tarjeta</label>
                 </div><hr width="85%" />
                  <!--INFORMACION TITULAR DE LA TARJETA-->
                 <b> <label for="inputAddress">Datos titular de la Tarjeta</label></b>
                 <br /> <div class="form-row">
                     <div class="form-group col-md-3">
-                        <input type="nombre" class="form-control" placeholder="Nombre y Apellido" id="inputnombre">
+                        <input type="text" class="form-control" placeholder="Nombre y Apellido" id="inputnombre" name="inputnombre" required/>
                     </div>
                     <div class="form-group col-md-3">
-                        <select id="inputState" class="form-control">
-                            <option selected>Tipo de documento...</option>
-                            <option>...</option>
+                        <select id="inputState" class="form-control" required>
+                            <option value="">Tipo de documento...</option>
+                            <option>Pasaporte</option>
                         </select>
                     </div>
                     <div class="form-group col-md-2">
-                        <input type="identificacion" class="form-control" placeholder="N°. de identificación" id="inputidentificacion">
+                        <input type="text" class="form-control" placeholder="N°. de identificación" id="inputidentificacion" name="inputidentificacion" required pattern="^[0-9]+"/>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-3">
-                        <input type="correo" class="form-control" placeholder="Correo electrónico" id="inputcorreo">
+                        <input type="email" class="form-control" placeholder="Correo electrónico" id="inputcorreo" name="inputcorreo" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <input type="telefono" class="form-control" placeholder="Teléfono" id="inputTelefono">
+                        <input type="tel" class="form-control" placeholder="Teléfono" id="inputTelefono" name="inputTelefono" required pattern="^[0-9]+"/>
                     </div>
                 </div><hr width="85%" />
                 <b> <label for="inputAddress">Domicilo de facturación</label></b>
-                <br /> <div class="form-row">
+                <br /> 
+                <div class="form-row">
                     <div class="form-group col-md-3">
-                        <input type="direccion" class="form-control" placeholder="Dirección" id="inputdirec">
-                        <label for="inputEmail4">Calle, número, edificio, apto,etc.</label>
+                       <input type="text" class="form-control" placeholder="Dirección" id="inputdirec" name="inputdirec" required/>
+                       <label for="inputEmail4">Calle, número, edificio, apto,etc.</label>
                     </div>
                     <div class="form-group col-md-3">
-                        <input type="email" class="form-control" placeholder="País" id="inputEmail4">
+                        <input type="text" class="form-control" placeholder="País" id="inputpais" name="inputpais" required />
                         <label for="inputEmail4">Lugar de residencia.</label>
                     </div>
                     <div class="form-group col-md-2">
-                        <input type="estado" class="form-control" placeholder="Estado / Departamento" id="inputestado">
+                        <input type="text" class="form-control" placeholder="Estado / Departamento" id="inputestado" name="inputestado" required/>
                     </div>
                  
-                       <div>  <input type="button" id="Buscar" name="Buscar" value="Pago seguro" class="boton" /></div>
-                  </div>
-                       <div class="form-row">
+                    <div>  <input type="submit" id="Buscar" name="Buscar" value="Pago seguro" class="boton" /></div>
+                </div>
+                <div class="form-row">
                             
-                           <div class="form-group col-md-3">
-                               <input type="cuidad" class="form-control" placeholder="Ciudad" id="inputCiudad">
-                           </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" class="form-control" placeholder="Ciudad" id="inputCiudad" name="inputCiudad" required/>
+                    </div>
 
-
-                           <div class="form-group col-md-2">
-                               <input type="codigo_postal" class="form-control" placeholder="Código postal" id="inputCodigo_porstal">
-                           </div>
-                           
-                       </div>    
-                </form>   
-             </div>
-    <!--INFORMACION-->
-    <br />
-    <div>
-        <center>
-            <header class="header" style="padding-left: 20%; ">Información</header>
-        </center>
-        <div style="border: 2px solid; margin: 2px;" class="imagen">
-            <article class="titulo_info">¿Quieres Viajar, pero no sabes si necesitas Visa? Descubrelo Aquí!</article>
-            <pre class="contenido_info">
-                En este artículo encontrarás todo lo relacionado con los requisitos de ingreso a todos los paises del mundo, entra y 
-                descubre si puedes ingresar sólo con tu pasaporte o si necesitas visa.
-
-                Encuentra todas las normativas necesarias para aplicar a una visa y así puedas encontrarte con tu destino!.
-            </pre>
-            <a target="_blank" href="https://necesito-visa-gt.web.app/" class="visa">PRESIONA AQUÍ PARA MÁS INFORMACIÓN</a>
+                   <div class="form-group col-md-2">
+                       <input type="text" class="form-control" placeholder="Código postal" id="inputCodigo_postal" name="inputCodigo_postal" required pattern="^[0-9]+"/>
+                   </div>
+                          
+                </div>    
+             </form>   
         </div>
-        <br />
-        <div style="border: 2px solid; margin: 2px;" class="imagen1">
-            <article class="titulo_info">¿Frío o Calor? ¿Relax o Rumba? ¡Descubre tu destino ideal!  </article>
-            <pre class="contenido_info">
-                Descubre cuál es tu destino perfecto llenando un facil cuestionario.
-
-                Quedarás encantado con los lugares que se ajustan a tus gustos y preferencias.
-
-                Después de conocer tu destino ideal, no podrás quedarte en casa!.
-            </pre>
-        </div>
-    </div>
-    <div>
-        <br />
-        <center>
-            <img src="~/Imagen/aeropuerto.jpg" style=" width:99%; height: 507px;" />
-        </center>
-    </div>
-    <br />
-    <!--CONTACTO-->
-    <div style="border: 2px solid; margin: 2px;" class="contacto">
-        <label class="contacto1">¿Necesitas ayuda personalizada?</label><br />
-        <label class="contacto2">Contactanos</label><br />
-        <pre class="contacto3">Comunicate de manera gratuita al
-        (+502) 5555-5555</pre>
-        <div style="text-align:center">
-            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook-square" id="social"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" id="social"></i></a>
-            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram" id="social"></i></a>
-            <a href="https://accounts.google.com/Login/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"><i class="fa fa-google-plus-square" id="social"></i></a>
-        </div>
-    </div>
     </div>
 
     <script src="~/Scripts/tabmenu.js"></script>

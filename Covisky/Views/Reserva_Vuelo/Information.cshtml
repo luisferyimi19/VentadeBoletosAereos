@@ -494,60 +494,62 @@ número de teléfono para poder contactarle si hubiera alguna información nueva
     </div>
     <div>
         <!--INFO PERSONAL-->
-        <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height: 140px">
-            <header class="titulo" style="background-color: white">Pasajero</header>
-            <div>
-                <label class="personal" style="font-weight: bold; padding-left: 20px;">Información Personal</label>
-                <br />
-                <div style="display:inline-block; padding-left: 20px">
-                    <label>Apellido(s):*</label><br />
-                    <input required type="text" id="apellido" name="apellido" placeholder="Ingrese Su Apellido(s)" class="texto" />
-                </div>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <div style="display:inline-block">
-                    <label>Nombre(s):*</label><br />
-                    <input required type="text" id="nombre" name="nombre" placeholder="Ingrese Su Nombre(s)" class="texto" />
-                </div>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <div style="display:inline-block">
-                    <label>Fecha de Nacimiento:*</label><br />
-                    <input required type="date" id="fechanac" name="fechanac" class="texto" />
-                </div>
-            </div>
-        </div>
-        <br />
-        <!--INFO CONTACTO-->
-        <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height: 110px">
-            <header class="titulo" style="background-color: white; color: #f44336">Información Sobre Contactos</header>
-            <div>
-                <div style="display:inline-block; padding-left: 20px">
-                    <label>Correo Electrónico:*</label><br />
-                    <input required type="text" id="correo" name="correo" placeholder="Ingrese Su Apellido(s)" class="texto" />
-                </div>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <div style="display:inline-block">
-                    <label>Confirme Su Correo Electrónico:*</label><br />
-                    <input required type="text" id="confirmarcorreo" name="confirmarcorreo" placeholder="Ingrese Su Nombre(s)" class="texto" />
-                </div>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <div style="display:inline-block">
-                    <label>Teléfono:*</label><br />
-                    <input required type="tel" id="telefono" name="telefono" placeholder="Ingrese Su Número de Teléfono" class="texto" />
+        <form action="~/Reserva_Vuelo/Pago" method="post">
+            <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height: 140px">
+                <header class="titulo" style="background-color: white">Pasajero</header>
+                <div>
+                    <label class="personal" style="font-weight: bold; padding-left: 20px;">Información Personal</label>
+                    <br />
+                    <div style="display:inline-block; padding-left: 20px">
+                        <label>Apellido(s):*</label><br />
+                        <input required type="text" id="apellido" name="apellido" placeholder="Ingrese Su Apellido(s)" class="texto" />
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div style="display:inline-block">
+                        <label>Nombre(s):*</label><br />
+                        <input required type="text" id="nombre" name="nombre" placeholder="Ingrese Su Nombre(s)" class="texto" />
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div style="display:inline-block">
+                        <label>Fecha de Nacimiento:*</label><br />
+                        <input required type="date" id="fechanac" name="fechanac" class="texto" min="2020-10-25"/>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br />
-        <!--ACEPTACION-->
-        <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height:220px">
-            <header class="titulo" style="background-color: white;">Aceptación de términos y condiciones</header>
-            <div>
-                <label style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;">Por favor acepta para poder continuar con tu compra.</label><br />
-                <pre style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;"><input required type="checkbox" id="leido" name="leido" value="Leido" />&nbsp;&nbsp;&nbsp;He leído y acepto el contrato de transporte, la Política General de Privacidad de clientes, viajeros y usuarios y las condiciones de manejo de mercancías peligrosas, la política de cancelación y 
-   penalidades por cambio, el cobro de impuestos y cargos gubernamentales no incluidos en el valor del servicio, así como aquellos incluidos y las condiciones de acceso uso de este sitio web.*</pre>
-                <label style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;"><input required type="checkbox" id="acepto" name="acepto" value="Acepto" />&nbsp;&nbsp;&nbsp;Acepto el uso de mis datos personales para recibir promociones, ofertas y novedades que COVISKY tiene para mí</label><br />
-                <a href="~/Reserva_Vuelo/Pago"><input type="button" id="btninfo" name="btninfo" value="CONTINUAR" class="btncontinuar" /></a><br />
+            <br />
+            <!--INFO CONTACTO-->
+            <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height: 110px">
+                <header class="titulo" style="background-color: white; color: #f44336">Información Sobre Contactos</header>
+                <div>
+                    <div style="display:inline-block; padding-left: 20px">
+                        <label>Correo Electrónico:*</label><br />
+                        <input required type="email" id="correo" name="correo" placeholder="Ingrese Su Apellido(s)" class="texto" />
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div style="display:inline-block">
+                        <label>Confirme Su Correo Electrónico:*</label><br />
+                        <input required type="email" id="confirmarcorreo" name="confirmarcorreo" placeholder="Ingrese Su Nombre(s)" class="texto" />
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div style="display:inline-block">
+                        <label>Teléfono:*</label><br />
+                        <input required type="tel" id="telefono" name="telefono" placeholder="Ingrese Su Número de Teléfono" class="texto" pattern="^[0-9]+"/>
+                    </div>
+                </div>
             </div>
-        </div>
+            <br />
+            <!--ACEPTACION-->
+            <div style=" margin-left: 75px; margin-right: 75px; border: 2px solid; background-color:#e0e0e0; height:220px">
+                <header class="titulo" style="background-color: white;">Aceptación de términos y condiciones</header>
+                <div>
+                    <label style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;">Por favor acepta para poder continuar con tu compra.</label><br />
+                    <pre style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;"><input required type="checkbox" id="leido" name="leido" value="Leido" />&nbsp;&nbsp;&nbsp;He leído y acepto el contrato de transporte, la Política General de Privacidad de clientes, viajeros y usuarios y las condiciones de manejo de mercancías peligrosas, la política de cancelación y 
+       penalidades por cambio, el cobro de impuestos y cargos gubernamentales no incluidos en el valor del servicio, así como aquellos incluidos y las condiciones de acceso uso de este sitio web.*</pre>
+                    <label style="padding-left: 20px; font-family:'Source Sans Pro'; font-size:16px;"><input required type="checkbox" id="acepto" name="acepto" value="Acepto" />&nbsp;&nbsp;&nbsp;Acepto el uso de mis datos personales para recibir promociones, ofertas y novedades que COVISKY tiene para mí</label><br />
+                    <input type="submit" id="btninfo" name="btninfo" value="CONTINUAR" class="btncontinuar" /><br />
+                </div>
+            </div>
+        </form>
     </div>
 
     <script src="~/Scripts/tabmenu.js"></script>
