@@ -13,10 +13,10 @@ namespace Covisky.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CoviskyEntities2 : DbContext
+    public partial class CoviskyEntities : DbContext
     {
-        public CoviskyEntities2()
-            : base("name=CoviskyEntities2")
+        public CoviskyEntities()
+            : base("name=CoviskyEntities")
         {
         }
     

@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CoviskyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Aeropuerto">
+    <Key>
+      <PropertyRef Name="aero_ID" />
+    </Key>
+    <Property Name="aero_ID" Type="numeric" Precision="4" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aero_pai_ID" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="aero_Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="aero_Ciudad" Type="varchar" MaxLength="30" />
+    <Property Name="aero_Departamento" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Asiento">
+    <Key>
+      <PropertyRef Name="asi_No_Asiento" />
+    </Key>
+    <Property Name="asi_No_Asiento" Type="numeric" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="asi_Nombre" Type="varchar" MaxLength="30" />
+    <Property Name="asi_Ubicacion" Type="varchar" MaxLength="30" />
+    <Property Name="asi_cla_ID" Type="numeric" Precision="2" Scale="0" />
+  </EntityType>
+  <EntityType Name="Boleto">
+    <Key>
+      <PropertyRef Name="bol_No_Boleto" />
+    </Key>
+    <Property Name="bol_ID_Reserva" Type="numeric" Precision="6" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bol_No_Boleto" Type="numeric" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="bol_aero_ID_Origen" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="bol_aero_ID_Destino" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="bol_Fecha_Salida" Type="date" />
+    <Property Name="bol_Fecha_Regreso" Type="date" />
+    <Property Name="bol_cla_ID" Type="numeric" Precision="2" Scale="0" />
+    <Property Name="bol_pas_Pasaporte" Type="varchar" MaxLength="20" />
+    <Property Name="bol_cantidad_Pajaseros" Type="numeric" Precision="2" Scale="0" />
+    <Property Name="bol_Hora_Salida" Type="time" Precision="7" />
+    <Property Name="bol_Hora_Llegada" Type="time" Precision="7" />
+    <Property Name="bol_Aeroline" Type="varchar" MaxLength="20" />
+    <Property Name="bol_Costo" Type="numeric" Precision="6" Scale="2" />
+    <Property Name="bol_tar_NoTarjeta" Type="numeric" Precision="16" Scale="0" />
+    <Property Name="bol_ser_ID" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="bol_Descuento_Millas" Type="numeric" Precision="6" Scale="2" />
+    <Property Name="bol_Escala" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Clase">
+    <Key>
+      <PropertyRef Name="cla_ID" />
+    </Key>
+    <Property Name="cla_ID" Type="numeric" Precision="2" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cla_Nombre" Type="varchar" MaxLength="30" />
+    <Property Name="cla_Descripcion" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Detalle_Factura">
+    <Key>
+      <PropertyRef Name="des_fac_ID" />
+    </Key>
+    <Property Name="des_fac_ID" Type="numeric" Precision="6" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="des_fac_No" Type="numeric" Precision="6" Scale="0" />
+    <Property Name="des_fac_Detalle" Type="varchar" MaxLength="300" />
+    <Property Name="des_fac_subTotal" Type="numeric" Precision="6" Scale="2" />
+  </EntityType>
+  <EntityType Name="Emisor_Tarjeta">
+    <Key>
+      <PropertyRef Name="et_ID" />
+    </Key>
+    <Property Name="et_ID" Type="numeric" Precision="2" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="et_Nombre" Type="varchar" MaxLength="30" />
+    <Property Name="et_Pais" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="fac_No" />
+    </Key>
+    <Property Name="fac_No" Type="numeric" Precision="6" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fac_bol_No_Boleto" Type="numeric" Precision="6" Scale="0" />
+    <Property Name="fac_Pais" Type="varchar" MaxLength="30" />
+    <Property Name="fac_CodigoPostal" Type="numeric" Precision="8" Scale="0" />
+    <Property Name="fac_Total" Type="numeric" Precision="6" Scale="2" />
+    <Property Name="fac_Fecha" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="pai_ID" />
+    </Key>
+    <Property Name="pai_ID" Type="numeric" Precision="3" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pai_Nombre" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Pasajero">
+    <Key>
+      <PropertyRef Name="pas_Pasaporte" />
+    </Key>
+    <Property Name="pas_ID" Type="numeric" Precision="5" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pas_Pasaporte" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="pas_Nombre" Type="varchar" MaxLength="30" />
+    <Property Name="pas_Apellido" Type="varchar" MaxLength="30" />
+    <Property Name="pas_Fecha_Nac" Type="date" />
+    <Property Name="pas_correo" Type="varchar" MaxLength="30" />
+    <Property Name="pas_telefono" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="pas_Prefijo" Type="varchar" MaxLength="5" />
+    <Property Name="pas_Direccion" Type="varchar" MaxLength="250" />
+    <Property Name="pas_tip_ID" Type="numeric" Precision="2" Scale="0" />
+    <Property Name="pas_No_Viajero_Fre" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="pas_Nacionalidad" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Servicio_Extra">
+    <Key>
+      <PropertyRef Name="ser_ID" />
+    </Key>
+    <Property Name="ser_ID" Type="numeric" Precision="3" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ser_Nombre" Type="varchar" MaxLength="30" />
+    <Property Name="ser_Descripcion" Type="varchar" MaxLength="200" />
+    <Property Name="ser_Costo" Type="numeric" Precision="4" Scale="2" />
+  </EntityType>
+  <EntityType Name="Tarjeta">
+    <Key>
+      <PropertyRef Name="tar_NoTarjeta" />
+    </Key>
+    <Property Name="tar_NoTarjeta" Type="numeric" Precision="16" Scale="0" Nullable="false" />
+    <Property Name="tar_FechaExp" Type="nvarchar" MaxLength="5" />
+    <Property Name="tar_CodSeguridad" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="tar_millas" Type="numeric" Precision="6" Scale="0" />
+    <Property Name="tar_et_ID" Type="numeric" Precision="2" Scale="0" />
+  </EntityType>
+  <EntityType Name="Tipo_Pasajero">
+    <Key>
+      <PropertyRef Name="tip_ID" />
+    </Key>
+    <Property Name="tip_ID" Type="numeric" Precision="2" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tip_Nombre" Type="varchar" MaxLength="20" />
+    <Property Name="tip_Descripcion" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <Association Name="FK_aero_pai_ID">
+    <End Role="Pais" Type="Self.Pais" Multiplicity="0..1" />
+    <End Role="Aeropuerto" Type="Self.Aeropuerto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="pai_ID" />
+      </Principal>
+      <Dependent Role="Aeropuerto">
+        <PropertyRef Name="aero_pai_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_asi_cla_ID">
+    <End Role="Clase" Type="Self.Clase" Multiplicity="0..1" />
+    <End Role="Asiento" Type="Self.Asiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clase">
+        <PropertyRef Name="cla_ID" />
+      </Principal>
+      <Dependent Role="Asiento">
+        <PropertyRef Name="asi_cla_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bol_aero_ID_Destino">
+    <End Role="Aeropuerto" Type="Self.Aeropuerto" Multiplicity="0..1" />
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeropuerto">
+        <PropertyRef Name="aero_ID" />
+      </Principal>
+      <Dependent Role="Boleto">
+        <PropertyRef Name="bol_aero_ID_Destino" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bol_aero_ID_Origen">
+    <End Role="Aeropuerto" Type="Self.Aeropuerto" Multiplicity="0..1" />
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeropuerto">
+        <PropertyRef Name="aero_ID" />
+      </Principal>
+      <Dependent Role="Boleto">
+        <PropertyRef Name="bol_aero_ID_Origen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bol_cla_ID">
+    <End Role="Clase" Type="Self.Clase" Multiplicity="0..1" />
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clase">
+        <PropertyRef Name="cla_ID" />
+      </Principal>
+      <Dependent Role="Boleto">
+        <PropertyRef Name="bol_cla_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bol_pas_Pasaporte">
+    <End Role="Pasajero" Type="Self.Pasajero" Multiplicity="0..1" />
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pasajero">
+        <PropertyRef Name="pas_Pasaporte" />
+      </Principal>
+      <Dependent Role="Boleto">
+        <PropertyRef Name="bol_pas_Pasaporte" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bol_ser_ID">
+    <End Role="Servicio_Extra" Type="Self.Servicio_Extra" Multiplicity="0..1" />
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicio_Extra">
+        <PropertyRef Name="ser_ID" />
+      </Principal>
+      <Dependent Role="Boleto">
+        <PropertyRef Name="bol_ser_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bol_tar_NoTarjeta">
+    <End Role="Tarjeta" Type="Self.Tarjeta" Multiplicity="0..1" />
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tarjeta">
+        <PropertyRef Name="tar_NoTarjeta" />
+      </Principal>
+      <Dependent Role="Boleto">
+        <PropertyRef Name="bol_tar_NoTarjeta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_des_fac_No">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="0..1" />
+    <End Role="Detalle_Factura" Type="Self.Detalle_Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="fac_No" />
+      </Principal>
+      <Dependent Role="Detalle_Factura">
+        <PropertyRef Name="des_fac_No" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_fac_bol_No_Boleto">
+    <End Role="Boleto" Type="Self.Boleto" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Boleto">
+        <PropertyRef Name="bol_No_Boleto" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="fac_bol_No_Boleto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pas_tip_ID">
+    <End Role="Tipo_Pasajero" Type="Self.Tipo_Pasajero" Multiplicity="0..1" />
+    <End Role="Pasajero" Type="Self.Pasajero" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_Pasajero">
+        <PropertyRef Name="tip_ID" />
+      </Principal>
+      <Dependent Role="Pasajero">
+        <PropertyRef Name="pas_tip_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tar_et_ID">
+    <End Role="Emisor_Tarjeta" Type="Self.Emisor_Tarjeta" Multiplicity="0..1" />
+    <End Role="Tarjeta" Type="Self.Tarjeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emisor_Tarjeta">
+        <PropertyRef Name="et_ID" />
+      </Principal>
+      <Dependent Role="Tarjeta">
+        <PropertyRef Name="tar_et_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CoviskyModelStoreContainer">
+    <EntitySet Name="Aeropuerto" EntityType="Self.Aeropuerto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Asiento" EntityType="Self.Asiento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Boleto" EntityType="Self.Boleto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clase" EntityType="Self.Clase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Detalle_Factura" EntityType="Self.Detalle_Factura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Emisor_Tarjeta" EntityType="Self.Emisor_Tarjeta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pais" EntityType="Self.Pais" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pasajero" EntityType="Self.Pasajero" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Servicio_Extra" EntityType="Self.Servicio_Extra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tarjeta" EntityType="Self.Tarjeta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tipo_Pasajero" EntityType="Self.Tipo_Pasajero" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_aero_pai_ID" Association="Self.FK_aero_pai_ID">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Aeropuerto" EntitySet="Aeropuerto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_asi_cla_ID" Association="Self.FK_asi_cla_ID">
+      <End Role="Clase" EntitySet="Clase" />
+      <End Role="Asiento" EntitySet="Asiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bol_aero_ID_Destino" Association="Self.FK_bol_aero_ID_Destino">
+      <End Role="Aeropuerto" EntitySet="Aeropuerto" />
+      <End Role="Boleto" EntitySet="Boleto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bol_aero_ID_Origen" Association="Self.FK_bol_aero_ID_Origen">
+      <End Role="Aeropuerto" EntitySet="Aeropuerto" />
+      <End Role="Boleto" EntitySet="Boleto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bol_cla_ID" Association="Self.FK_bol_cla_ID">
+      <End Role="Clase" EntitySet="Clase" />
+      <End Role="Boleto" EntitySet="Boleto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bol_pas_Pasaporte" Association="Self.FK_bol_pas_Pasaporte">
+      <End Role="Pasajero" EntitySet="Pasajero" />
+      <End Role="Boleto" EntitySet="Boleto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bol_ser_ID" Association="Self.FK_bol_ser_ID">
+      <End Role="Servicio_Extra" EntitySet="Servicio_Extra" />
+      <End Role="Boleto" EntitySet="Boleto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bol_tar_NoTarjeta" Association="Self.FK_bol_tar_NoTarjeta">
+      <End Role="Tarjeta" EntitySet="Tarjeta" />
+      <End Role="Boleto" EntitySet="Boleto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_des_fac_No" Association="Self.FK_des_fac_No">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="Detalle_Factura" EntitySet="Detalle_Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_fac_bol_No_Boleto" Association="Self.FK_fac_bol_No_Boleto">
+      <End Role="Boleto" EntitySet="Boleto" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pas_tip_ID" Association="Self.FK_pas_tip_ID">
+      <End Role="Tipo_Pasajero" EntitySet="Tipo_Pasajero" />
+      <End Role="Pasajero" EntitySet="Pasajero" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tar_et_ID" Association="Self.FK_tar_et_ID">
+      <End Role="Emisor_Tarjeta" EntitySet="Emisor_Tarjeta" />
+      <End Role="Tarjeta" EntitySet="Tarjeta" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
