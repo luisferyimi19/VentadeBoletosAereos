@@ -16,7 +16,7 @@ namespace Covisky
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Reserva_Vuelo", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

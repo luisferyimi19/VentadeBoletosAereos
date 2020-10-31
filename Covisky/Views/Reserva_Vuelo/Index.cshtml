@@ -1,4 +1,4 @@
-﻿@model Covisky.Models.Clases.Reserva
+﻿@model Covisky.Models.Clases.ReservaIyV
 
 @{
     Layout = null;
@@ -357,8 +357,10 @@
 
         <!--LOGO Y TITULO-->
         <div>
-            <a href="~/Reserva_Vuelo/Index"><img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
-            <header class="header">COVISKY</header></a>
+            <a href="~/Reserva_Vuelo/Index">
+                <img src="~/Imagen/logo.png" style="float:left; width:130px; height:130px">
+                <header class="header">COVISKY</header>
+            </a>
             <span class="slogan">FLY SAFE, FLY NOW,  FLY WITH COVISKY</span>
         </div>
 
@@ -410,22 +412,28 @@
 
                                     <br /><br />
 
-                                    <input required type="text" id="Origen" name="Origen" class="info4" />
-                                    <input required type="text" id="Destino" name="Destino" class="info4" />
-                                    <input required type="date" id="Sales" name="Sales" class="info5" min="2020-10-25" />
-                                    <input required type="date" id="Regresas" name="Regresas" class="info5" min="2020-10-26" />
+                                    <!--<input required type="text" id="Origen" name="Origen" class="info4" />-->
+                                    <select id="Origeniv" name="Origeniv" class="info4" required>
+                                        <option value="">Seleccione Un Pais</option>
+                                    </select>
+                                    <!--<input required type="text" id="Destino" name="Destino" class="info4" />-->
+                                    <select id="Destinoiv" name="Destinoiv" class="info4" required>
+                                        <option value="">Seleccione Un Pais</option>
+                                    </select>
+                                    <input required type="date" id="Salesiv" name="Salesiv" class="info5" min="2020-10-25" />
+                                    <input required type="date" id="Regresasiv" name="Regresasiv" class="info5" min="2020-10-26" />
                                     <ul style="float: right">
                                         <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+" /></li>
                                         <li class="clase"><label class="persona">Niños</label><input type="number" id="Ninos" name="Ninos" placeholder="0" class="number1" min="0" pattern="^[0-9]+" /></li>
                                         <li class="clase"><label class="persona">Bebés</label><input type="number" id="Bebes" name="Bebes" placeholder="0" class="number2" min="0" pattern="^[0-9]+" /></li>
                                         <ul style="float: right">
                                             <li class="clase2">
-                                                <input type="radio" id="Economica" name="class" value="Economica" checked />
+                                                <input type="radio" id="Economicaiv" name="class" value="Economica" checked />
                                                 <label>Económica</label>
                                             </li>
                                             <br />
                                             <li class="clase2">
-                                                <input type="radio" id="Ejecutivo" name="class" value="Ejecutivo" />
+                                                <input type="radio" id="Ejecutivoiv" name="class" value="Ejecutivo" />
                                                 <label>Ejecutivo</label>
                                             </li>
                                         </ul>
@@ -452,8 +460,14 @@
 
                                     <br /><br />
 
-                                    <input required type="text" id="Origen" name="Origen" class="info4" />
-                                    <input type="text" id="Destino" name="Destino" class="info4" required />
+                                    <!--<input required type="" id="Origen" name="Origen" class="info4" />-->
+                                    <select id="Origensi" name="Origen" class="info4" required>
+                                        <option value="">Seleccione Un Pais</option>
+                                    </select>
+                                    <!--<input type="text" id="Destino" name="Destino" class="info4" required />-->
+                                    <select id="Destinosi" name="Destino" class="info4" required>
+                                        <option value="">Seleccione Un Pais</option>
+                                    </select>
                                     <input type="date" id="Sales" name="Sales" class="info7" required min="2020-10-25" />
                                     <ul style="float: right">
                                         <li class="clase"><label class="persona">Adultos</label><input type="number" id="Adultos" name="Adultos" placeholder="0" class="number" min="0" pattern="^[0-9]+" /></li>
@@ -494,8 +508,14 @@
 
                                     <br />
                                     <h4 style="position: absolute; left: 5%;">1</h4>
-                                    <input type="text" id="Origen" name="Origen" class="info4" required />
-                                    <input type="text" id="Destino" name="Destino" class="info4" required />
+                                    <!--<input type="text" id="Origen" name="Origen" class="info4" required />-->
+                                    <select id="Origenm1" name="Origen" class="info4" required>
+                                        <option value="">Seleccione Un Pais</option>
+                                    </select>
+                                    <!--<input type="text" id="Destino" name="Destino" class="info4" required />-->
+                                    <select id="Destinom1" name="Destino" class="info4" required>
+                                        <option value="">Seleccione Un Pais</option>
+                                    </select>
                                     <input type="date" id="Sales" name="Sales" class="info5" required min="2020-10-25" />
                                     <input type="date" id="Regresas" name="Regresas" class="info5" required min="2020-10-28" />
                                     <br />
@@ -517,8 +537,14 @@
                                         </ul>
                                     </ul>
                                     <h4 style="position: absolute; left: 5%;">2</h4>
-                                    <input type="text" id="Origen" name="Origen" class="info4" required />
-                                    <input type="text" id="Destino" name="Destino" class="info4" required />
+                                    <!--<input type="text" id="Origen" name="Origen" class="info4" required />-->
+                                    <select id="Origenm2" name="Destino" class="info4" required>
+                                        <option value="">Seleccione Un Pais</option>
+                                    </select>
+                                    <!--<input type="text" id="Destino" name="Destino" class="info4" required />-->
+                                    <select id="Destinom2" name="Destino" class="info4" required>
+                                        <option value="">Seleccione Un Pais</option>
+                                    </select>
                                     <input type="date" id="Sales" name="Sales" class="info5" required min="2020-10-25" />
                                     <input type="date" id="Regresas" name="Regresas" class="info5" required min="2020-10-28" />
                                 </div>
@@ -532,7 +558,7 @@
             </div>
 
             <!--Vista de Mis Viajes-->
-            
+
             <div class="tabPanel">
                 <form action="~/Reserva_Vuelo/Checkin2" method="post">
                     <center>
@@ -558,7 +584,7 @@
                     <input type="submit" class="btn btn-danger btn-lg" style="float: right; margin-right: 10px; margin-top: 24px;background-color:#f44336" value="Continuar" />
                 </form>
             </div>
-            
+
 
             <!--Vista de Check-In-->
             <div class="tabPanel">
@@ -664,12 +690,18 @@
                                             <div class="col">
                                                 <span>Origen</span>
                                                 <i class="fa fa-plane"></i>
-                                                <input type="text" class="form-control" style="max-width:60%" required />
+                                                <!--<input type="text" class="form-control" style="max-width:60%" required />-->
+                                                <select id="Origenev" name="Destino" class="form-control" style="max-width:60%" required>
+                                                    <option value="">Seleccione Un Pais</option>
+                                                </select>
                                             </div>
                                             <div class="col">
                                                 <span>Destino</span>
                                                 <i class="fa fa-plane"></i>
-                                                <input type="text" class="form-control" style="max-width:60%" required />
+                                                <!--<input type="text" class="form-control" style="max-width:60%" required />-->
+                                                <select id="Destinoev" name="Destino" class="form-control" style="max-width:60%" required>
+                                                    <option value="">Seleccione Un Pais</option>
+                                                </select>
                                             </div>
                                             <div class="col">
                                                 <span>Ingresa la fecha de tu vuelo</span>
@@ -721,7 +753,7 @@
 
                 Encuentra todas las normativas necesarias para aplicar a una visa y así puedas encontrarte con tu destino!.
             </pre>
-                <a  target="_blank"  href="https://necesito-visa-gt.web.app/"  class="visa">PRESIONA AQUÍ PARA MÁS INFORMACIÓN</a>
+                <a target="_blank" href="https://necesito-visa-gt.web.app/" class="visa">PRESIONA AQUÍ PARA MÁS INFORMACIÓN</a>
             </div>
             <br />
             <div style="border: 2px solid; margin: 2px;" class="imagen1">
@@ -758,9 +790,47 @@
     </div>
 
     <script src="~/Scripts/tabmenu.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '/Reserva_Vuelo/ObtenerPaises',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var nombre = $("#Origeniv");
+                    var nombre1 = $("#Destinoiv");
+                    var nombre2 = $("#Origensi");
+                    var nombre3 = $("#Destinosi");
+                    var nombre4 = $("#Origenm1");
+                    var nombre5 = $("#Destinom1");
+                    var nombre6 = $("#Origenm2");
+                    var nombre7 = $("#Destinom2");
+                    var nombre8 = $("#Origenev");
+                    var nombre9 = $("#Destinoev");
+                    var datos = data.data;
+                    $(datos).each(function (i, v) {
+                        nombre.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                        nombre1.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                        nombre2.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                        nombre3.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                        nombre4.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                        nombre5.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                        nombre6.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                        nombre7.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                        nombre8.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                        nombre9.append('<option values ="' + v.id + '">' + v.nombre + '</option>')
+                    });
+                },
+                error: function () {
+                    console.log('err')
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

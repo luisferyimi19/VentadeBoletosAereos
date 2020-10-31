@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CoviskyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="pai_ID" />
+    </Key>
+    <Property Name="pai_ID" Type="Decimal" Precision="3" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pai_Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="CoviskyEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Pais" EntityType="Self.Pais" />
+  </EntityContainer>
+</Schema>

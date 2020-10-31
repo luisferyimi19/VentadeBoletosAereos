@@ -640,7 +640,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CoviskyEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CoviskyEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Aeropuerto" EntityType="Self.Aeropuerto" />
           <EntitySet Name="Asiento" EntityType="Self.Asiento" />
           <EntitySet Name="Boleto" EntityType="Self.Boleto" />
@@ -707,7 +707,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CoviskyModelStoreContainer" CdmEntityContainer="CoviskyEntities2">
+        <EntityContainerMapping StorageEntityContainer="CoviskyModelStoreContainer" CdmEntityContainer="CoviskyEntities">
           <EntitySetMapping Name="Aeropuerto">
             <EntityTypeMapping TypeName="CoviskyModel.Aeropuerto">
               <MappingFragment StoreEntitySet="Aeropuerto">

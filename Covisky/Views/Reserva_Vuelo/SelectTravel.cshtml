@@ -1,4 +1,4 @@
-﻿@model Covisky.Models.Clases.Reserva
+﻿@model Covisky.Models.Clases.ReservaIyV
 
 @{
     Layout = null;
@@ -211,7 +211,7 @@
             margin: 0px !important;
         }
 
-        html{
+        html {
             height: 650px;
         }
 
@@ -375,7 +375,7 @@
             color: #f44336;
             font-size: 72px;
             font-family: Russo One;
-            text-align:center;
+            text-align: center;
             padding-left: 35%;
         }
 
@@ -400,7 +400,7 @@
             font-weight: bold;
         }
 
-        .vuelo{
+        .vuelo {
             font-family: 'Source Sans Pro';
             font-size: 18px;
         }
@@ -424,7 +424,7 @@
                     </a>
                 </li>
                 <li id="menuop">
-                    <a href="~/Reserva_Vuelo/TravelOffer"style="position:relative; top:-11px;">
+                    <a href="~/Reserva_Vuelo/TravelOffer" style="position:relative; top:-11px;">
                         <i class="fa fa-tag"></i>
                         Oferta de Viajes
                     </a>
@@ -462,22 +462,22 @@
         <div class="form-group" style="text-align:center;">
             <div style="display:inline-block;">
                 <label>Programa de Lealtad</label><br />
-                <input type="text" id="ProgramaLealtad" name="ProgramaLealtad" value="PROGRAMA UMG" readonly="readonly"/>
+                <input type="text" id="ProgramaLealtad" name="ProgramaLealtad" value="PROGRAMA UMG" readonly="readonly" />
             </div>
 
             <div style="display:inline-block">
                 <label>Viaje Corto</label><br />
-                <input type="text" id="viajecorto" name="viajecorto" value="0"/>
+                <input type="text" id="viajecorto" name="viajecorto" value="0" />
             </div>
 
             <div style="display:inline-block">
                 <label>Viaje Intermedio</label><br />
-                <input type="text" id="viajeintermedio" name="viajeintermedio" value="0"/>
+                <input type="text" id="viajeintermedio" name="viajeintermedio" value="0" />
             </div>
 
             <div style="display:inline-block">
                 <label>Viaje Largo</label><br />
-                <input type="text" id="viajelargo" name="viajelargo" value="0"/>
+                <input type="text" id="viajelargo" name="viajelargo" value="0" />
             </div>
         </div>
     </div>
@@ -488,11 +488,11 @@
         <div>
             <label class="vuelo">IDA:</label>
             &nbsp;&nbsp;&nbsp;
-            <label id="origen" name="origen" class="vuelo">(Pais Origen)</label>
+            <label id="origen" name="origen" class="vuelo">@Model.origeniv</label>
             &nbsp;&nbsp;&nbsp;
             <i class="fa fa-chevron-right"></i>
             &nbsp;&nbsp;&nbsp;
-            <label id="destino" name="destino" class="vuelo">(Pais Destino)</label>
+            <label id="destino" name="destino" class="vuelo">@Model.destinoiv</label>
         </div>
 
         <div style="display:inline-block">
@@ -500,21 +500,21 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label class="vuelo">LLEGA</label>
             <br />
-            <label class="horavuelo" id="horasale" name="horasale">06:00</label>
+            <label class="horavuelo" id="horasaleida" name="horasaleida">06:00</label>
             &nbsp;
             <i class="fa fa-arrow-right"></i>
             &nbsp;
-            <label class="horavuelo" id="horallega" name="horallega">06:50</label>
+            <label class="horavuelo" id="horallegaida" name="horallegaida">06:50</label>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div style="display:inline-block; text-align:center">
             <label class="vuelo">CLASE ECONÓMICA</label><br />
-            <input type="button" id="economica" name="economica" value="$500" class="btn btn-info" />
+            <input type="submit" id="economicaida" name="economicaida" value="500" class="btn btn-info" />
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div style="display:inline-block; text-align:center">
             <label class="vuelo">CLASE EJECUTIVA</label><br />
-            <input type="button" id="ejecutiva" name="ejecutiva" value="$500" class="btn btn-success" />
+            <input type="button" id="ejecutivaida" name="ejecutivaida" value="$500" class="btn btn-success" />
         </div>
 
         <br /><br />
@@ -523,11 +523,11 @@
         <div>
             <label class="vuelo">VUELTA:</label>
             &nbsp;&nbsp;&nbsp;
-            <label id="origen" name="origen" class="vuelo">(Pais Destino)</label>
+            <label id="origen" name="origen" class="vuelo">@Model.destinoiv</label>
             &nbsp;&nbsp;&nbsp;
             <i class="fa fa-chevron-right"></i>
             &nbsp;&nbsp;&nbsp;
-            <label id="destino" name="destino" class="vuelo">(Pasi Origen)</label>
+            <label id="destino" name="destino" class="vuelo">@Model.origeniv</label>
         </div>
 
         <div style="display:inline-block">
@@ -535,21 +535,21 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label class="vuelo">LLEGA</label>
             <br />
-            <label class="horavuelo">06:00</label>
+            <label class="horavuelo" id="horasalevue" name="horasalevue">06:00</label>
             &nbsp;
             <i class="fa fa-arrow-right"></i>
             &nbsp;
-            <label class="horavuelo">06:50</label>
+            <label class="horavuelo" id="horasalevue" name="horasalevue">06:50</label>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div style="display:inline-block; text-align:center">
             <label class="vuelo">CLASE ECONÓMICA</label><br />
-            <input type="button" id="economica" name="economica" value="$500" class="btn btn-info" />
+            <input type="button" id="economicavue" name="economicavue" value="$500" class="btn btn-info" />
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div style="display:inline-block; text-align:center">
             <label class="vuelo">CLASE EJECUTIVA</label><br />
-            <input type="button" id="ejecutiva" name="ejecutiva" value="$500" class="btn btn-success" />
+            <input type="button" id="ejecutivavue" name="ejecutivavue" value="$500" class="btn btn-success" />
         </div>
 
         <!--COSTO TOTAL-->

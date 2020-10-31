@@ -114,24 +114,24 @@
     <Content Include="Imagen\mejores-aerolineas-sudamerica%281%29.jpg" />
     <Content Include="Imagen\mejores-aerolineas-sudamerica%282%29.jpg" />
     <Content Include="Imagen\mejores-aerolineas-sudamerica.jpg" />
-    <Content Include="Models\Model1.Context.tt">
+    <Content Include="Models\Prueba.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Prueba.edmx</DependentUpon>
+      <LastGenOutput>Prueba.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Model1.tt">
+    <Content Include="Models\Prueba.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Prueba.edmx</DependentUpon>
+      <LastGenOutput>Prueba.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Model1.edmx">
+    <EntityDeploy Include="Models\Prueba.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Prueba.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <Content Include="Models\Prueba.edmx.diagram">
+      <DependentUpon>Prueba.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -150,57 +150,60 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Aeropuerto.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Asiento.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Boleto.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Clase.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Clases\Reserva.cs" />
+    <Compile Include="Models\Clases\ListaPais.cs" />
+    <Compile Include="Models\Clases\ReservaIyV.cs" />
+    <Compile Include="Models\Clases\SeleccionViaje.cs" />
     <Compile Include="Models\Detalle_Factura.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Emisor_Tarjeta.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Factura.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Pais.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Pasajero.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Prueba.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prueba.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Prueba.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Prueba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prueba.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Servicio_Extra.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Tarjeta.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Tipo_Pasajero.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
+    <Compile Include="Obtener.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +231,7 @@
     <Content Include="Views\Reserva_Vuelo\Checkin2.cshtml" />
     <Content Include="Views\Reserva_Vuelo\SelectTravel.cshtml" />
     <Content Include="Views\Reserva_Vuelo\Information.cshtml" />
+    <Content Include="Views\Reserva_Vuelo\Insertar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
