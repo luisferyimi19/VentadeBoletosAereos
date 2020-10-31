@@ -38,5 +38,6 @@ namespace Covisky.Models.Clases
         public string estado { get; set; }
         public string ciudad { get; set; }
         public int codigop { get; set; }
+        public int telefonotar { get; set; }
     }
 }

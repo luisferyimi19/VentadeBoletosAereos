@@ -1,4 +1,4 @@
-﻿@model Covisky.Models.Clases.ReservaIyV
+﻿@model Covisky.Models.Clases.Informacion
 
 @{
     Layout = null;
@@ -370,7 +370,7 @@
         <div style=" margin: 30px; border: 2px solid ;  border: black 2px solid; background-color: #C0C0C0">
             <form action="~/Reserva_Vuelo/Insertar" method="post">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" required>
+                    <!--<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" required>-->
                     <label class="form-check-label" for="exampleRadios2">
                         Tarjeta de crédito o débito
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card-2-back" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -384,7 +384,7 @@
                 </div>
                 <!---INFORMACION DE LA TARJETA-->
                 <b><label for="inputAddress">Datos de Tarjeta</label></b>
-                <div class="form-row">
+                <div class="form-row" style="padding-left:15px">
                     <br />
                     <div class="form-group col-md-3">
                         <input type="text" class="form-control" placeholder="Número de tarjeta" id="inputtarjeta" name="inputtarjeta" required pattern="^[0-9]+">
@@ -407,7 +407,7 @@
                 </div><hr width="85%" />
                 <!--INFORMACION TITULAR DE LA TARJETA-->
                 <b> <label for="inputAddress">Datos titular de la Tarjeta</label></b>
-                <br /> <div class="form-row">
+                <br /> <div class="form-row" style="padding-left:15px">
                     <div class="form-group col-md-3">
                         <input type="text" class="form-control" placeholder="Nombre y Apellido" id="inputnombre" name="inputnombre" required />
                     </div>
@@ -421,7 +421,7 @@
                         <input type="text" class="form-control" placeholder="N°. de identificación" id="inputidentificacion" name="inputidentificacion" required pattern="^[0-9]+" />
                     </div>
                 </div>
-                <div class="form-row">
+                <div class="form-row" style="padding-left:15px">
                     <div class="form-group col-md-3">
                         <input type="email" class="form-control" placeholder="Correo electrónico" id="inputcorreo" name="inputcorreo" required>
                     </div>
@@ -431,7 +431,7 @@
                 </div><hr width="85%" />
                 <b> <label for="inputAddress">Domicilo de facturación</label></b>
                 <br />
-                <div class="form-row">
+                <div class="form-row" style="padding-left:15px">
                     <div class="form-group col-md-3">
                         <input type="text" class="form-control" placeholder="Dirección" id="inputdirec" name="inputdirec" required />
                         <label for="inputEmail4">Calle, número, edificio, apto,etc.</label>
@@ -448,7 +448,7 @@
 
                     <div>  <input type="submit" id="Buscar" name="Buscar" value="Pago seguro" class="boton" /></div>
                 </div>
-                <div class="form-row">
+                <div class="form-row" style="padding-left:15px">
 
                     <div class="form-group col-md-3">
                         <input type="text" class="form-control" placeholder="Ciudad" id="inputCiudad" name="inputCiudad" required />

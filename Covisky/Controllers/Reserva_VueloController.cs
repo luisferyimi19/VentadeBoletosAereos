@@ -60,59 +60,88 @@ namespace Covisky.Controllers
 
         public ActionResult Pago()
         {
-            return View();
+            Informacion inf = new Informacion();
+            inf.apellido = Request.Form["apellido"].ToString();
+            inf.nombre = Request.Form["nombre"].ToString();
+            inf.fechanac = Convert.ToDateTime(Request.Form["fechanac"].ToString());
+            inf.correo = Request.Form["correo"].ToString();
+            inf.telefonoinfo = Convert.ToInt32(Request.Form["telefono"].ToString());
+            TempData["Informacion"] = inf;
+            return View(inf);
         }
 
         public ActionResult Checkin2()
         {
             return View();
         }
-        string ori,des = "";
         public ActionResult SelectTravel()
         {
-            ReservaIyV riv = new ReservaIyV();
-            riv.origeniv = Request.Form["Origeniv"].ToString();
-            riv.destinoiv = Request.Form["Destinoiv"].ToString();
+            ReservaIyV riv1 = new ReservaIyV();
+            riv1.origeniv = Request.Form["Origeniv"].ToString();
+            riv1.destinoiv = Request.Form["Destinoiv"].ToString();
+            riv1.saleiv = Convert.ToDateTime(Request.Form["Salesiv"].ToString());
+            riv1.regresaiv = Convert.ToDateTime(Request.Form["Regresasiv"].ToString());
+            riv1.cant_adultoiv = Convert.ToInt32(Request.Form["Adultos"].ToString());
+            riv1.claseiv = Request.Form["Clase"].ToString();
+            riv1.aerolinea = "CoviMG";
 
-            ori = riv.origeniv;
-            des = riv.destinoiv;
-            return View(riv);
+            TempData["ReservaIyV"] = riv1;
+            return View(riv1);
         }
         public ActionResult Information()
         {
-            return View();
+            SeleccionViaje riv2 = new SeleccionViaje();
+            riv2.costo1 = Convert.ToInt32(Request.Form["costoida"].ToString());
+            
+            TempData["SeleccionViaje"] = riv2;
+            return View(riv2);
         }
         public ActionResult Insertar()
         {
+            ReservaIyV riv1 = TempData["ReservaIyV"] as ReservaIyV;
+            //ReservaIyV riv2 = TempData["ReservaIyV"] as ReservaIyV;
+            SeleccionViaje sv1 = TempData["SeleccionViaje"] as SeleccionViaje;
+            Informacion inf1 = TempData["Informacion"] as Informacion;
             ReservaIyV riv = new ReservaIyV();
             using (CoviskyEntities cov = new CoviskyEntities())
             {
                 //index
-                riv.noboleto = 100;
-                //riv.origeniv = Request.Form["Origeniv"].ToString();
-                SelectTravel();
-                riv.origeniv = ori;
-                //riv.destinoiv = Request.Form["Destinoiv"].ToString();
-                //riv.saleiv = Convert.ToDateTime(Request.Form["Salesiv"].ToString());
-                //riv.regresaiv = Convert.ToDateTime(Request.Form["Regresasiv"].ToString());
-                //riv.cant_adultoiv = Convert.ToInt32(Request.Form["Adultos"].ToString());
-                //riv.claseiv = Request.Form["Economicaiv"].ToString();
+                Random rdm = new Random();
+                int nobol = rdm.Next(100,100001);
+                riv.noboleto = nobol;
+                riv.origeniv = riv1.origeniv;
+                riv.destinoiv = riv1.destinoiv;
+                riv.saleiv = riv1.saleiv;
+                riv.regresaiv = riv1.regresaiv;
+                riv.cant_adultoiv = riv1.cant_adultoiv;
+                riv.claseiv = riv1.claseiv;
+                riv.aerolinea = riv1.aerolinea;
                 //selecttravel
-                //riv.costo1 = Convert.ToInt32(Request.Form["economicaida"].ToString());
+                riv.costo1 = sv1.costo1;
                 //info
-                //riv.nombre = Request.Form["nombre"].ToString();
-                //riv.apellido = Request.Form["apellido"].ToString();
-                //riv.fechanac = Convert.ToDateTime(Request.Form["fechanac"].ToString());
-                //riv.correo = Request.Form["correo"].ToString();
-                //riv.telefonoinfo = Convert.ToInt32(Request.Form["telefono"].ToString());
+                riv.nombre = inf1.nombre;
+                riv.apellido = inf1.apellido;
+                riv.fechanac = inf1.fechanac;
+                riv.correo = inf1.correo;
+                riv.telefonoinfo = inf1.telefonoinfo;
                 //pago
-                //riv.notarjeta = Convert.ToInt32(Request.Form["inputtarjeta"].ToString());
-                //riv.fechaven = Request.Form["inputfecha"].ToString();
-                //riv.cvv = Convert.ToInt32(Request.Form["inputcodigo_seg"].ToString());
-                //riv.nopasaporte = Convert.ToInt64(Request.Form["inputidentificacion"].ToString());
-                //riv.aerolinea = "CoviskyUMG";
-                //riv.pais = Request.Form["inputpais"].ToString();
-                //riv.direccion = Request.Form["inputdirec"].ToString();
+                riv.notarjeta = Convert.ToInt32(Request.Form["inputtarjeta"].ToString());
+                riv.fechaven = Request.Form["inputfecha"].ToString();
+                riv.cvv = Convert.ToInt32(Request.Form["inputcodigo_seg"].ToString());
+                riv.pais = Request.Form["inputState"].ToString();
+                riv.nombretar = Request.Form["inputnombre"].ToString();
+                riv.pasaporte = Request.Form["inputidentificacion"].ToString();
+                riv.correotar = Request.Form["inputcorreo"].ToString();
+                riv.telefonotar = Convert.ToInt32(Request.Form["inputTelefono"].ToString());
+                riv.direccion = Request.Form["inputdirec"].ToString();
+                riv.estado = Request.Form["inputestado"].ToString();
+                riv.ciudad = Request.Form["inputCiudad"].ToString();
+                riv.codigop = Convert.ToInt32(Request.Form["inputCodigo_postal"].ToString());
+
+                var bol = new Boleto();
+                bol.bol_No_Boleto = riv.noboleto;
+                bol.bol_aero_ID_Origen = riv.origeniv;
+                bol.bol_aero_ID_Destino = riv.destinoiv
             }
             return View(riv);
         }
