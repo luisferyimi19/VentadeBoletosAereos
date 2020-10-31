@@ -457,112 +457,119 @@
     </div>
 
     <!--ELEGIR VIAJE-->
-    <div style=" margin-left: 25px; margin-right: 25px; border: 2px solid;">
-        <header class="header2" style="color:black;">Recuerde que puede comprar con sus Puntos/Millas + Dinero</header>
-        <div class="form-group" style="text-align:center;">
-            <div style="display:inline-block;">
-                <label>Programa de Lealtad</label><br />
-                <input type="text" id="ProgramaLealtad" name="ProgramaLealtad" value="PROGRAMA UMG" readonly="readonly" />
+    <form action="~/Reserva_Vuelo/Information" method="post">
+        <div style=" margin-left: 25px; margin-right: 25px; border: 2px solid;">
+            <header class="header2" style="color:black;">Recuerde que puede comprar con sus Puntos/Millas + Dinero</header>
+            <div class="form-group" style="text-align:center;">
+                <div style="display:inline-block;">
+                    <label>Programa de Lealtad</label><br />
+                    <input type="text" id="ProgramaLealtad" name="ProgramaLealtad" value="PROGRAMA UMG" readonly="readonly" />
+                </div>
+
+                <div style="display:inline-block">
+                    <label>Viaje Corto</label><br />
+                    <input type="text" id="viajecorto" name="viajecorto" value="0" />
+                </div>
+
+                <div style="display:inline-block">
+                    <label>Viaje Intermedio</label><br />
+                    <input type="text" id="viajeintermedio" name="viajeintermedio" value="0" />
+                </div>
+
+                <div style="display:inline-block">
+                    <label>Viaje Largo</label><br />
+                    <input type="text" id="viajelargo" name="viajelargo" value="0" />
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <div style=" margin-left: 300px; margin-right: 300px; border: 2px solid; height:30%; padding:25px;">
+            <!--ELECCION VUELO IDA-->
+            <div>
+                <label class="vuelo">IDA:</label>
+                &nbsp;&nbsp;&nbsp;
+                <label id="origen" name="origen" class="vuelo">@Model.origeniv</label>
+                &nbsp;&nbsp;&nbsp;
+                <i class="fa fa-chevron-right"></i>
+                &nbsp;&nbsp;&nbsp;
+                <label id="destino" name="destino" class="vuelo">@Model.destinoiv</label>
             </div>
 
             <div style="display:inline-block">
-                <label>Viaje Corto</label><br />
-                <input type="text" id="viajecorto" name="viajecorto" value="0" />
+                <label class="vuelo">SALE</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label class="vuelo">LLEGA</label>
+                <br />
+                <label class="horavuelo" id="horasaleida" name="horasaleida">06:00</label>
+                &nbsp;
+                <i class="fa fa-arrow-right"></i>
+                &nbsp;
+                <label class="horavuelo" id="horallegaida" name="horallegaida">06:50</label>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="display:inline-block; text-align:center">
+                <label class="vuelo">CLASE ECONÓMICA</label><br />
+                <input type="radio" id="economicaida" name="costoida" value="500" class="btn btn-info" checked />
+                <label>$500</label>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="display:inline-block; text-align:center">
+                <label class="vuelo">CLASE EJECUTIVA</label><br />
+                <input type="radio" id="ejecutivaida" name="costoida" value="800" class="btn btn-success" />
+                <label>$800</label>
+            </div>
+
+            <br /><br />
+
+            <!--ELECCION VUELO VUELTA-->
+            <div>
+                <label class="vuelo">VUELTA:</label>
+                &nbsp;&nbsp;&nbsp;
+                <label id="origen" name="origen" class="vuelo">@Model.destinoiv</label>
+                &nbsp;&nbsp;&nbsp;
+                <i class="fa fa-chevron-right"></i>
+                &nbsp;&nbsp;&nbsp;
+                <label id="destino" name="destino" class="vuelo">@Model.origeniv</label>
             </div>
 
             <div style="display:inline-block">
-                <label>Viaje Intermedio</label><br />
-                <input type="text" id="viajeintermedio" name="viajeintermedio" value="0" />
+                <label class="vuelo">SALE</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label class="vuelo">LLEGA</label>
+                <br />
+                <label class="horavuelo" id="horasalevue" name="horasalevue">14:00</label>
+                &nbsp;
+                <i class="fa fa-arrow-right"></i>
+                &nbsp;
+                <label class="horavuelo" id="horasalevue" name="horasalevue">14:50</label>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="display:inline-block; text-align:center">
+                <label class="vuelo">CLASE ECONÓMICA</label><br />
+                <input type="radio" id="economicavue" name="costovuelta" value="600" class="btn btn-info" />
+                <label>$600</label>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="display:inline-block; text-align:center">
+                <label class="vuelo">CLASE EJECUTIVA</label><br />
+                <input type="radio" id="ejecutivavue" name="costovuelta" value="900" class="btn btn-success" checked />
+                <label>$900</label>
             </div>
 
-            <div style="display:inline-block">
-                <label>Viaje Largo</label><br />
-                <input type="text" id="viajelargo" name="viajelargo" value="0" />
+            <!--COSTO TOTAL-->
+            <div style="float:right; position:relative; top:-185px; padding-right:20px; text-align:center">
+                <!--<label class="infovuelo">VALOR TOTAL:</label><br />-->
+                <!--<label class="totalinfovuelo">USD 0.00</label><br />-->
+                <!--<label class="infovuelo">Tarifa Base: 0.0</label><br />-->
+                <!--<label class="infovuelo">Impuestos: 0.0</label><br />-->
+                <!--<label class="infovuelo">Cargos: 0.0</label><br />-->
+                <br /><br /><br /><br />
+                <input type="submit" id="ejecutiva" name="ejecutiva" value="SOLICITAR" class="botonvuelo" /><br />
+                <label class="infovuelo">Incluye Cargos e Impuestos</label><br />
             </div>
         </div>
-    </div>
-    <br />
-
-    <div style=" margin-left: 300px; margin-right: 300px; border: 2px solid; height:30%; padding:25px;">
-        <!--ELECCION VUELO IDA-->
-        <div>
-            <label class="vuelo">IDA:</label>
-            &nbsp;&nbsp;&nbsp;
-            <label id="origen" name="origen" class="vuelo">@Model.origeniv</label>
-            &nbsp;&nbsp;&nbsp;
-            <i class="fa fa-chevron-right"></i>
-            &nbsp;&nbsp;&nbsp;
-            <label id="destino" name="destino" class="vuelo">@Model.destinoiv</label>
-        </div>
-
-        <div style="display:inline-block">
-            <label class="vuelo">SALE</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label class="vuelo">LLEGA</label>
-            <br />
-            <label class="horavuelo" id="horasaleida" name="horasaleida">06:00</label>
-            &nbsp;
-            <i class="fa fa-arrow-right"></i>
-            &nbsp;
-            <label class="horavuelo" id="horallegaida" name="horallegaida">06:50</label>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div style="display:inline-block; text-align:center">
-            <label class="vuelo">CLASE ECONÓMICA</label><br />
-            <input type="submit" id="economicaida" name="economicaida" value="500" class="btn btn-info" />
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div style="display:inline-block; text-align:center">
-            <label class="vuelo">CLASE EJECUTIVA</label><br />
-            <input type="button" id="ejecutivaida" name="ejecutivaida" value="$500" class="btn btn-success" />
-        </div>
-
-        <br /><br />
-
-        <!--ELECCION VUELO VUELTA-->
-        <div>
-            <label class="vuelo">VUELTA:</label>
-            &nbsp;&nbsp;&nbsp;
-            <label id="origen" name="origen" class="vuelo">@Model.destinoiv</label>
-            &nbsp;&nbsp;&nbsp;
-            <i class="fa fa-chevron-right"></i>
-            &nbsp;&nbsp;&nbsp;
-            <label id="destino" name="destino" class="vuelo">@Model.origeniv</label>
-        </div>
-
-        <div style="display:inline-block">
-            <label class="vuelo">SALE</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label class="vuelo">LLEGA</label>
-            <br />
-            <label class="horavuelo" id="horasalevue" name="horasalevue">06:00</label>
-            &nbsp;
-            <i class="fa fa-arrow-right"></i>
-            &nbsp;
-            <label class="horavuelo" id="horasalevue" name="horasalevue">06:50</label>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div style="display:inline-block; text-align:center">
-            <label class="vuelo">CLASE ECONÓMICA</label><br />
-            <input type="button" id="economicavue" name="economicavue" value="$500" class="btn btn-info" />
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div style="display:inline-block; text-align:center">
-            <label class="vuelo">CLASE EJECUTIVA</label><br />
-            <input type="button" id="ejecutivavue" name="ejecutivavue" value="$500" class="btn btn-success" />
-        </div>
-
-        <!--COSTO TOTAL-->
-        <div style="float:right; position:relative; top:-185px; padding-right:20px; text-align:center">
-            <label class="infovuelo">VALOR TOTAL:</label><br />
-            <label class="totalinfovuelo">USD 0.00</label><br />
-            <label class="infovuelo">Tarifa Base: 0.0</label><br />
-            <label class="infovuelo">Impuestos: 0.0</label><br />
-            <label class="infovuelo">Cargos: 0.0</label><br />
-            <a href="~/Reserva_Vuelo/Information"><input type="button" id="ejecutiva" name="ejecutiva" value="SOLICITAR" class="botonvuelo" /></a><br />
-            <label class="infovuelo">Incluye Cargos e Impuestos</label><br />
-        </div>
-    </div>
+    </form>
 
     <script src="~/Scripts/tabmenu.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

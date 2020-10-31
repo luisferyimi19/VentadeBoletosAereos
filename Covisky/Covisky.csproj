@@ -161,7 +161,9 @@
     <Compile Include="Models\Clase.cs">
       <DependentUpon>Prueba.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Clases\Informacion.cs" />
     <Compile Include="Models\Clases\ListaPais.cs" />
+    <Compile Include="Models\Clases\Pagos.cs" />
     <Compile Include="Models\Clases\ReservaIyV.cs" />
     <Compile Include="Models\Clases\SeleccionViaje.cs" />
     <Compile Include="Models\Detalle_Factura.cs">

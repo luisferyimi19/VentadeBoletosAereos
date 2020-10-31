@@ -321,6 +321,13 @@
             color: #f44336;
             padding-left: 90px;
         }
+        .compra {
+            font-family: 'Russo One';
+            font-size: 45px;
+            text-align: center;
+            color: #f44336;
+            text-shadow: 1px 0px 0px white, 0px 1px 0px white, -1px 0px 0px white, 0px -1px 0px white;
+        }
     </style>
 </head>
 <body>
@@ -369,7 +376,9 @@
         <!--TAB BAR MENU-->
         <div class="tabContainer">
             <br /><br /><br />
-            <header style="font-family:'Russo One'; font-size:50px; text-align:center; color: #f44336;">VUELO ADQUIRIDO CORRECTAMENTE - NO.BOLETO = @Model.noboleto</header>
+            <header class="compra">VUELO ADQUIRIDO CORRECTAMENTE - NO.BOLETO = @Model.noboleto</header><br />
+            <header class="compra">ORIGEN = @Model.origeniv - Destiono = @Model.destinoiv</header><br />
+            <header class="compra">COSTO TOTAL DEL VUELO = $ @Model.costo1</header>
             <br /><br />
             <a href="~/Reserva_Vuelo/Index"><center><input type="button" value="ACEPTAR" class="boton" /></center></a>
         </div>
